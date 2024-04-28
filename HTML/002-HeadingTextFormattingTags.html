@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heading and Text Formatting Tags</title>
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+    <link rel="stylesheet" href="../template/style.css" />
+
+    <style>
+      .break {
+        margin-bottom: 30px; /* or padding-bottom: 10px; */
+      }
+
+      hr {
+        margin: 30px 0px;
+      }
+      .extraDiv {
+        max-width: 100%;
+        margin: 0 auto 30px;
+        border-radius: 40px;
+        background-color: rgba(56, 38, 67, 0.5);
+        width: fit-content;
+        padding: 40px;
+      }
+
+      .vectors img:nth-child(6) {
+        width: 100%;
+        top: 3000px;
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Heading Tags</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt;
+                tags.
+              </p>
+              <p>
+                &lt;h1&gt; defines the most important heading. &lt;h6&gt;
+                defines the least important heading.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;h1&gt; Heading 1 &lt;h1&gt;
+                    &lt;h2&gt; Heading 2 &lt;h2&gt;
+                    &lt;h3&gt; Heading 3 &lt;h3&gt;
+                    &lt;h4&gt; Heading 4 &lt;h4&gt;
+                    &lt;h5&gt; Heading 5 &lt;h5&gt;
+                    &lt;h6&gt; Heading 6 &lt;h6&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                When you write it in your own compiler, it looks exactly like
+                this:
+              </p>
+            </div>
+            <div class="codeArea extraDiv">
+              <br />
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+              <br />
+            </div>
+            <div class="contentText">
+              <p><b>Note:</b></p>
+              <p>
+                <li>
+                  Browsers automatically add some white space (a margin) before
+                  and after a heading.
+                </li>
+              </p>
+              <p>
+                <li>
+                  Use HTML headings for headings only. Don't use headings to
+                  make text BIG or bold. Because Headings clearly express the
+                  structure of the document, increasing the understandability of
+                  the document.
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="break"></div>
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Text Formatting Tags</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              HTML contains several elements for defining text with a special
+              meaning.
+            </div>
+
+              <div class="codeArea">
+                <div class="codeContent">
+                  <br />
+                  <p>
+                    <span class="item">&lt;p&gt;</span> This is a paragraph. It
+                    is used to represent blocks of text.<span class="item"
+                      >&lt;/p&gt;</span
+                    >
+                  </p>
+
+                  <p>
+                    <span class="item">&lt;strong&gt;</span> This text is
+                    bold.<span class="item">&lt;/strong&gt;</span>
+                  </p>
+
+                  <p>
+                    <span class="item">&lt;em&gt;</span> This text is
+                    italicized.
+                    <span class="item">&lt;/em&gt;</span>
+                  </p>
+
+                  <p>
+                    <span class="item">&lt;u&gt;</span> This text is underlined.
+                    <span class="item">&lt;/u&gt;</span>
+                  </p>
+
+                  <p>
+                    <span class="item">&lt;s&gt;</span> This text has a
+                    strike-through effect. <span class="item">&lt;/s&gt;</span>
+                  </p>
+
+                  <p>
+                    This text contains
+                    <span class="item">&lt;sup&gt;</span> superscript
+                    <span class="item">&lt;/sup&gt;</span> text.
+                  </p>
+
+                  <p>
+                    This text contains
+                    <span class="item">&lt;sub&gt;</span> subscript
+                    <span class="item">&lt;/sub&gt;</span> text.
+                  </p>
+
+                  <p>
+                    Inline code:
+                    <span class="item">&lt;code&gt;</span>console.log('Hello,
+                    World!');<span class="item">&lt;/code&gt;</span>
+                  </p>
+
+                  <pre>
+                   <span class="item">&lt;pre&gt;</span>
+                    This is preformatted text.
+                          It preserves whitespace 
+                                and line breaks.<span class="item">&lt;/pre&gt;</span></pre>
+                </div>
+            </div>
+            <!-- Code Area -->
+
+            <div class="contentText">
+              <p>The above code looks exactly like this:</p>
+              <div class="codeArea extraDiv" style="background-color: #211e2d">
+                <p>
+                  This is a paragraph. It is used to represent blocks of text.
+                </p>
+
+                <strong> This text is bold.</strong> <br />
+
+                <em> This text is italicized. </em> <br />
+
+                <u> This text is underlined. </u> <br />
+
+                <s> This text has a strike-through effect. </s> <br />
+
+                This text contains <sup> superscript </sup> text. <br />
+
+                This text contains <sub> subscript </sub> text. <br />
+
+                Inline code: <code>console.log('Hello, World!');</code>
+
+                <pre>
+                  This is preformatted text.
+                        It preserves whitespace 
+                              and line breaks.</pre
+                >
+              </div>
+              <h3>HTML Quotation and Citation Elements</h3>
+              <br />
+              <p>
+                <span class="item">&lt;abbr&gt;</span> Defines an abbreviation
+                or acronym
+              </p>
+              <p>
+                <span class="item">&lt;address&gt;</span> Defines contact
+                information for the author/owner of a document
+              </p>
+              <p>
+                <span class="item">&lt;bdo&gt;</span> Defines the text direction
+              </p>
+              <p>
+                <span class="item">&lt;blockquote&gt;</span> Defines a section
+                that is quoted from another source
+              </p>
+              <p>
+                <span class="item">&lt;cite&gt;</span> Defines the title of a
+                work
+              </p>
+              <p>
+                <span class="item">&lt;q&gt;</span> Defines a short inline
+                quotation
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <h3>Usage of &lt;hr&gt; and &lt;br&gt; Tags</h3>
+              <br />
+              <p>
+                The <span class="item">&lt;hr&gt;</span> tag stands for
+                "horizontal rule" and is used to create a horizontal line in a
+                document. It is often used to visually separate different
+                sections of content or to create a visual break between
+                elements. The above line was created with the &lt;hr&gt; tag.
+              </p>
+
+              <p>
+                The <span class="item"> &lt;br&gt;</span> tag stands for "line
+                break" and is used to create a new line within a block of text.
+                It is used to force content to start on a new line without
+                creating a new paragraph.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML Comments</div>
+            <br />
+            <div class="contentText">
+              <p>
+                <b>Note:</b> HTML comments are not displayed in the browser, but
+                they can help document your HTML source code.
+              </p>
+              <p>
+                You can add comments to your HTML source by using the following
+                syntax:
+              </p>
+              <span style="background-color: rgba(56, 38, 67)">
+                &lt;!-- Write your comments here --&gt;
+              </span>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+  
+  </main>  <br /><br /><br />
+  </body>
+</html>
