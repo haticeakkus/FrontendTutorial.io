@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  main {
+    .topicTitle {
+      padding-top: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: #302c42;
+      font-size: 19px;
+      font-weight: 550;
+    }
+    .allArea {
+      width: 80%;
+      min-height: 200px;
+      border-radius: 40px;
+      margin: 0 auto;
+      color: #302c42;
+      background-color: white;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .linkArea {
+        width: 48%;
+        padding: 50px 0;
+        .seperatedDivs{
+            display: flex;
+            justify-content: space-around;
+        }
+      }
+      .codeArea {
+        height: 100%;
+        width: 50%;
+        text-align: left;
+        background-color: rgba(56, 38, 67, 1);
+        margin: 10px auto;
+      }
+      p {
+        line-height: 35px;
+      }
+      .fa-solid {
+        color: #302c42;
+        padding-left: 3px;
+      }
+    }
+    .allAreaWelcome {
+      width: 50%;
+      .welcomeArea {
+        padding: 50px;
+        p {
+          color: #302c42;
+          font-size: 19px;
+          font-weight: 550;
+          &:last-child {
+            font-weight: 450;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  body {
+    main {
+      .allArea {
+        display: block;
+        .linkArea{
+            margin: auto;
+            width: 100%;
+            padding: 35px;
+            .seperatedDivs{
+                display: block;
+            }
+        }
+        .codeArea{
+            width: 80%;
+        }
+      }
+      .allAreaWelcome {
+        width: 60%;
+        .welcomeArea {
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    main {
+        a {
+            font-size: 16px;
+          }
+      .allAreaWelcome {
+        width: 80%;
+        .welcomeArea {
+          padding: 40px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

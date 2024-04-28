@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body main .topicTitle {
+  padding-top: 50px;
+}
+body main a {
+  text-decoration: none;
+  color: #302c42;
+  font-size: 19px;
+  font-weight: 550;
+}
+body main .allArea {
+  width: 80%;
+  min-height: 200px;
+  border-radius: 40px;
+  margin: 0 auto;
+  color: #302c42;
+  background-color: white;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .allArea .linkArea {
+  width: 48%;
+  padding: 50px 0;
+}
+body main .allArea .linkArea .seperatedDivs {
+  display: flex;
+  justify-content: space-around;
+}
+body main .allArea .codeArea {
+  height: 100%;
+  width: 50%;
+  text-align: left;
+  background-color: rgb(56, 38, 67);
+  margin: 10px auto;
+}
+body main .allArea p {
+  line-height: 35px;
+}
+body main .allArea .fa-solid {
+  color: #302c42;
+  padding-left: 3px;
+}
+body main .allAreaWelcome {
+  width: 50%;
+}
+body main .allAreaWelcome .welcomeArea {
+  padding: 50px;
+}
+body main .allAreaWelcome .welcomeArea p {
+  color: #302c42;
+  font-size: 19px;
+  font-weight: 550;
+}
+body main .allAreaWelcome .welcomeArea p:last-child {
+  font-weight: 450;
+}
+
+@media screen and (max-width: 1240px) {
+  body main .allArea {
+    display: block;
+  }
+  body main .allArea .linkArea {
+    margin: auto;
+    width: 100%;
+    padding: 35px;
+  }
+  body main .allArea .linkArea .seperatedDivs {
+    display: block;
+  }
+  body main .allArea .codeArea {
+    width: 80%;
+  }
+  body main .allAreaWelcome {
+    width: 60%;
+  }
+  body main .allAreaWelcome .welcomeArea p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main a {
+    font-size: 16px;
+  }
+  body main .allAreaWelcome {
+    width: 80%;
+  }
+  body main .allAreaWelcome .welcomeArea {
+    padding: 40px;
+  }
+  body main .allAreaWelcome .welcomeArea p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=main.css.map */
