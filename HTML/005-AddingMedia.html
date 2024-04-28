@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+
+    <title>Adding Media</title>
+    <link rel="stylesheet" href="../template/style.css" />
+    <style>
+      .break {
+        margin-bottom: 30px; /* veya padding-bottom: 10px; */
+      }
+
+      .extraDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 0;
+        background-color: #211e2d;
+      }
+      h4 {
+        margin-bottom: 10px;
+      }
+      .vectors img:nth-child(6) {
+        width: 100%;
+        top: 3300px;
+        left: 0px;
+        rotate: 180deg;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+
+      <div class="topicTitle">HTML</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Adding Media</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Adding Image</div>
+            <div class="contentText">
+              <p>
+                To add an image, use the
+                <span class="item">&lt;img&gt;</span> tag and provide the
+                <span class="item">src</span>
+                attribute with the path to the image file.
+              </p>
+              <p>
+                <span class="item">alt</span> attribute is an alternative
+                description for the image not showing.
+              </p>
+              <p>
+                The image size is adjusted according to the
+                <span class="item">width </span>and
+                <span class="item">height</span>
+                attributes.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                 &lt;img src="images/aybu.jpg" alt="A logo of AYBU" height="200" width="500" /&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                Output should be like this (You have to write your own media
+                path in src):
+              </p>
+            </div>
+            <div class="extraDiv">
+              <img
+                src="images/aybu.jpeg"
+                alt="A logo of AYBU"
+                style="max-width: 100%; border-radius: 4%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Adding Video</div>
+            <div class="contentText">
+              <p>
+                The HTML <span class="item"> &lt;video&gt;</span> element is
+                used to show a video on a web page.
+              </p>
+              <h4>Video Attributes</h4>
+              <p>
+                <span class="item">src:</span> Specifies the URL or file path of
+                the video file.
+              </p>
+              <p>
+                <span class="item">controls: </span> Adds playback controls
+                (play, pause, volume, etc.) to the video.
+              </p>
+              <p>
+                <span class="item">autoplay: </span> The video starts playing
+                automatically when the page loads.
+              </p>
+              <p>
+                <span class="item"> loop:</span> The video automatically
+                restarts when it reaches the end.
+              </p>
+              <p>
+                <span class="item">muted:</span> The video is muted by default.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;video src="video/aybu_tanitim.mp4" controls height="250" width="500" muted>
+                  &lt;!-- If the video doesn't play or is not supported, you can provide an alternative text.--&gt;
+                  Your browser does not support the video tag.
+                  &lt;/video &gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                Output should be like this (You have to write your own media
+                path in src):
+              </p>
+            </div>
+            <div class="extraDiv">
+              <video
+                src="video/aybu_tanitim.mp4"
+                controls
+                muted
+                style="max-width: 100%; border-radius: 8%"
+              >
+                <!-- If the video doesn't play or is not supported, you can provide an alternative text. -->
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Adding Audio</div>
+            <div class="contentText">
+              <p>
+                To add an audio file, use the
+                <span class="item">&lt;audio&gt;</span> tag and provide the
+                <span class="item">src</span>
+                attribute with the path to the audio file.
+              </p>
+              <p>
+                The <span class="item">'controls'</span> attribute will add
+                playback controls like play, pause, volume, etc.
+              </p>
+              <p>
+                Similar commands apply when adding sounds, autoplay, muted, loop
+                etc.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;audio src="path/to/audio.mp3" controls>
+                  &lt;!-- If the audio doesn't play or is not supported, you can provide an alternative text. --&gt;                    
+                  Your browser does not support the audio element.
+                  &lt;/audio &gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                No sound is added but output should look like this (You have to
+                write your own media path in src):
+              </p>
+            </div>
+            <div class="extraDiv">
+              <audio src="path/to/audio.mp3" controls>
+                <!-- If the audio doesn't play or is not supported, you can provide an alternative text. -->
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Adding link on media</div>
+            <div class="contentText">
+              <p>All attributes in "a" tag are valid.</p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;a href="https://aybu.edu.tr" target="_blank" title="Go to AYBU Website"&gt;
+                  &lt;img src="images/aybü.png" alt="A logo of AYBU" height="200" width="200"/>&lt;/a&gt;
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                You can go to the AYBU website by clicking on the logo. Also,
+                the title property gives information about the link when you
+                mouse over it. The output should be like this (You have to write
+                your own media path in src):
+              </p>
+            </div>
+            <br />
+            <a
+              href="https://aybu.edu.tr"
+              target="_blank"
+              title="Go to AYBU Website"
+              ><img
+                src="images/aybü logo media.jpg"
+                alt="A logo of AYBU"
+                style="max-width: 100%; border-radius: 8%"
+            /></a>
+            <p>
+              For example, if there is a problem in the display of the picture,
+              the alt attribute gives information about the picture. Then the
+              output would be:
+            </p>
+            <a
+              href="https://aybu.edu.tr"
+              target="_blank"
+              title="Go to AYBU Website"
+              ><img
+                src="images/aybü logo media.png"
+                alt="A logo of AYBU"
+                style="height: 300px; max-width: 100%"
+            /></a>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br>
+  </body>
+</html>
