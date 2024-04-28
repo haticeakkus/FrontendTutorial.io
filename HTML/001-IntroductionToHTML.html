@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Introduction</title>
+    <link rel="stylesheet" href="../template/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../template/img/icons/iconHTML.png"
+    />
+
+    <style>
+      p {
+        margin-bottom: 10px;
+      }
+
+      .break {
+        margin-bottom: 30px; /* veya padding-bottom: 10px; */
+      }
+
+      .item {
+        font-size: 15px;
+        font-weight: bold;
+        color: burlywood;
+      }
+
+      .extraDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 0;
+        background-color: #211e2d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">HTML Introduction</div>
+        <img
+          class="vector2"
+          src="../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <div class="contentTitle">What is HTML?</div>
+
+              <p>HTML stands for HyperText Markup Language.</p>
+              <p>
+                It is the backbone of every web page, providing the structure
+                and content for displaying information on the internet.
+              </p>
+              <p>
+                HTML uses a series of elements and tags to define the different
+                components of a webpage, such as headings, paragraphs, images,
+                links, tables, forms, and more.
+              </p>
+            </div>
+            <div class="break"></div>
+            <div class="contentTitle">A Simple HTML Document</div>
+            <div class="contentText">
+              <li>
+                All HTML documents must start with a document type declaration:
+                &lt;!DOCTYPE html&gt;.
+              </li>
+
+              <li>
+                The HTML document itself begins with &lt;html&gt; and ends with
+                &lt;/html&gt;.
+              </li>
+              <li>
+                The visible part of the HTML document is between &lt;body&gt;
+                and &lt;/body&gt;.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="UTF-8" /&gt;
+                      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                      &lt;title&gt;Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                      &lt;h1&gt;My First Heading&lt;/h1&gt;
+                      &lt;p&gt;My first paragraph.&lt;/p&gt;
+                    &lt;/body&gt;
+                  &lt;/html&gt;</pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML ELEMENTS</div>
+            <div class="contentText">
+              <p>
+                An HTML page is composed of various elements and tags that
+                define its structure, content, and presentation. The basic
+                structure of an HTML page consists of two main sections: the
+                &lt;head&gt; and the &lt;body&gt;.
+              </p>
+              <div class="break"></div>
+              <h3>1 - Head Section</h3>
+              <br />
+
+              <p>
+                The &lt;head&gt; section is not visible on the web page itself
+                but contains important metadata and information about the page.
+                It usually includes:
+              </p>
+              <p>
+                <span class="item">&lt;!DOCTYPE html&gt;</span> declaration
+                represents the document type, and helps browsers to display web
+                pages correctly.
+              </p>
+              <p>
+                <span class="item">Title (&lt;title&gt;):</span> The title of
+                the webpage.
+              </p>
+
+              <p>
+                <span class="item">Link Tags (&lt;link&gt;):</span> These tags
+                are used to link external resources to the HTML page, such as
+                stylesheets (CSS files), favicons, and fonts.
+              </p>
+
+              <p>
+                <span class="item">Meta Tags (&lt;meta&gt;):</span> These tags
+                provide metadata about the page, such as the character encoding,
+                author information, viewport settings for responsive design, and
+                more. For example:
+              </p>
+              <li>
+                The charset meta tag specifies the character encoding like
+                <i>"UTF-8".</i>
+              </li>
+              <li>
+                The expression <i>"width=device-width"</i> specifies that the
+                page will be the same width as the device.
+              </li>
+              <li>
+                The statement <i>"initial-scale=1.0"</i> ensures that the page
+                is displayed at its original size.
+              </li>
+              <div class="break"></div>
+              <h3>2 - Body Section</h3>
+              <br />
+              <p>
+                The &lt;body&gt; section contains the visible content of the
+                webpage that users see in their browsers. This includes text,
+                images, videos, links, forms, and any other elements that make
+                up the actual content of the webpage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Web Browsers</div>
+            <div class="contentText">
+              <p>
+                The purpose of a web browser (Chrome, Edge, Firefox, Safari) is
+                to read HTML documents and display them correctly.
+              </p>
+              <p>
+                A browser does not display the HTML tags, but uses them to
+                determine how to display the document:
+              </p>
+              <div class="codeArea extraDiv">
+                <img
+                  src="images/first_page.png"
+                  style="border-radius: 3%; height: auto; max-width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+      
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
