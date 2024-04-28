@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+
+    <title>HTML Entity Codes</title>
+    <link rel="stylesheet" href="../template/style.css" />
+    <style>
+
+      .break {
+        margin-bottom: 30px; /* veya padding-bottom: 10px; */
+      }
+
+  
+      .extraDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 0;
+        background-color: #211e2d;
+      }
+
+      tr,
+      td,
+      th {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <!-- <img src="img/vectors/Vector 14.png" alt=""> -->
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+
+      <div class="topicTitle">HTML</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Entity Codes</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>Some characters are reserved in HTML.</p>
+
+              <p>
+                Character entities are used to display reserved characters in
+                HTML.
+              </p>
+            </div>
+            <div class="break"></div>
+            <!-- Code Area -->
+            <div class="codeArea extraDiv" style="background-color: #211e2d">
+              <table border="1">
+                <tr>
+                  <th>Description</th>
+                  <th>Entity Name</th>
+                  <th>Entity Number</th>
+                  <th>Entity</th>
+                </tr>
+                <tr>
+                  <td>Non-breaking space</td>
+                  <td>&amp;nbsp;</td>
+                  <td>&amp;#160;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Less than</td>
+                  <td>&amp;lt;</td>
+                  <td>&amp;#60;</td>
+                  <td>&lt;</td>
+                </tr>
+                <tr>
+                  <td>Greater than</td>
+                  <td>&amp;gt;</td>
+                  <td>&amp;#62;</td>
+                  <td>&gt;</td>
+                </tr>
+                <tr>
+                  <td>Ampersand</td>
+                  <td>&amp;amp;</td>
+                  <td>&amp;#38;</td>
+                  <td>&amp;</td>
+                </tr>
+                <tr>
+                  <td>Double quotation mark</td>
+                  <td>&amp;quot;</td>
+                  <td>&amp;#34;</td>
+                  <td>&quot;</td>
+                </tr>
+                <tr>
+                  <td>Single quotation mark (apostrophe)</td>
+                  <td>&amp;apos;</td>
+                  <td>&amp;#39;</td>
+                  <td>&apos;</td>
+                </tr>
+                <tr>
+                  <td>Cent</td>
+                  <td>&amp;cent;</td>
+                  <td>&amp;#162;</td>
+                  <td>&cent;</td>
+                </tr>
+                <tr>
+                  <td>Pound</td>
+                  <td>&amp;pound;</td>
+                  <td>&amp;#163;</td>
+                  <td>&pound;</td>
+                </tr>
+                <tr>
+                  <td>Yen</td>
+                  <td>&amp;yen;</td>
+                  <td>&amp;#165;</td>
+                  <td>&yen;</td>
+                </tr>
+                <tr>
+                  <td>Euro</td>
+                  <td>&amp;euro;</td>
+                  <td>&amp;#8364;</td>
+                  <td>&euro;</td>
+                </tr>
+                <tr>
+                  <td>Copyright</td>
+                  <td>&amp;copy;</td>
+                  <td>&amp;#169;</td>
+                  <td>&copy;</td>
+                </tr>
+                <tr>
+                  <td>Registered trademark</td>
+                  <td>&amp;reg;</td>
+                  <td>&amp;#174;</td>
+                  <td>&reg;</td>
+                </tr>
+              </table>
+
+              <br />
+            </div>
+            <div class="break"></div>
+            <div class="contentText">
+              <p>
+                If you use the less than (<span class="item">&lt;</span>) or
+                greater than (<span class="item">&gt;</span>) signs in your
+                text, the browser might mix them with tags.
+              </p>
+              <p>
+                For example; to display a less than sign (<span class="item"
+                  >&lt;</span
+                >) we must write: <span class="item">&amp;lt;</span> or
+                <span class="item">&amp;#60;</span>.
+              </p>
+            </div>
+
+            <br />
+
+            <div class="contentText">
+              <p>
+                <b>Advantage of using an entity name:</b> An entity name is easy
+                to remember.
+              </p>
+              <p>
+                <b>Disadvantage of using an entity name:</b> Browsers may not
+                support all entity names, but the support for entity numbers is
+                good.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br>
+
+  </body>
+</html>
