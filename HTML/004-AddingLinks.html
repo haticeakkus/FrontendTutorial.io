@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Links</title>
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+
+    <link rel="stylesheet" href="../template/style.css" />
+    <style>
+      .break {
+        margin-bottom: 30px; /* veya padding-bottom: 10px; */
+      }
+
+      .extraDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 0;
+        background-color: #211e2d;
+      }
+      .container a {
+        font-size: 17px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+
+      .example {
+        margin: 20px 0px;
+        font-size: 17px;
+      }
+      .vectors img:nth-child(6) {
+        width: 100%;
+        left: 0px;
+        top: 3100px;
+        rotate: 180deg;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+
+      <div class="topicTitle">HTML</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Adding Links</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                Links are found in nearly all web pages. Links allow users to
+                click their way from page to page.
+              </p>
+              <br />
+            </div>
+            <div class="contentTitle">Link with URL:</div>
+            <div class="contentText">
+              <p>
+                To add a link to another website, use the
+                <code class="item">&lt;a&gt;(anchor)</code> element with the
+                <code class="item">href</code> attribute, which indicates the
+                link's destination.
+              </p>
+            </div>
+            <div class="example">Example:</div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre> 
+                  &lt;p&gt;&lt;a href="https://www.aybubiltek.com" title="Goes to Biltek Website" >Visit Biltek Website&lt;/a&gt;&lt;/p&gt; <br>
+                  &lt;p&gt;&lt;a href="https://www.w3schools.com/html/">Website&lt;/a&gt; that can help you in your HTML learning process. &lt;/p&gt;
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>The code output will be like this:</p>
+              <li>
+                <a
+                  href="https://www.aybubiltek.com"
+                  title="Goes to Biltek Website"
+                  >Visit Biltek Website</a
+                >
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/html/">Website</a> that can
+                help you in your HTML learning process.
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle" id="targetAttribute">
+              Link with Target Attribute:
+            </div>
+            <div class="contentText">
+              <p>
+                By default, the linked page will be displayed in the current
+                browser window. To change this, you must specify another target
+                for the link.
+              </p>
+              <p>The target attribute can have one of the following values:</p>
+
+              <p>
+                <span class="item">_self </span>- Default. Opens the document in
+                the same window/tab as it was clicked
+              </p>
+              <p>
+                <span class="item">_blank</span> - Opens the document in a new
+                window or tab
+              </p>
+              <p>
+                <span class="item">_parent</span> - Opens the document in the
+                parent frame
+              </p>
+              <p>
+                <span class="item">_top </span>- Opens the document in the full
+                body of the window
+              </p>
+              <div class="example">Example:</div>
+              <p>
+                To open a link in a new browser tab or window, use the
+                <code class="item">target</code> attribute with the value
+                <code class="item">_blank</code>.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;p&gt;&lt;a href="https://www.aybubiltek.com" target="_blank"> Visit Biltek Website (Opens in New Tab) &lt;/a&gt;&lt;/p&gt;
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>The code output will be like this:</p>
+              <li>
+                <a href="https://www.aybubiltek.com" target="_blank"
+                  >Visit Biltek Website (Opens in New Tab)</a
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Link to Download Items</div>
+            <div class="contentText">
+              <p>
+                Add the item and the "download" attribute to download items via
+                link.
+              </p>
+            </div>
+            <div class="example">Example:</div>
+
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;p&gt; Download &lt;a href="images/biltek.png" download>Biltek Logo&lt;/a&gt;&lt;/p&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>The code output will be like this:</p>
+              <li>
+                Download <a href="images/biltek.png" download>Biltek Logo</a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Link to an Email Address</div>
+            <div class="contentText">
+              <p>
+                Use <span class="item">mailto:</span> inside the
+                <span class="item">href</span> attribute to create a link that
+                opens the user's email program (to let them send a new email):
+              </p>
+            </div>
+            <div class="example">Example:</div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                 &lt;p&gt;&lt;a href="mailto:contact@example.com"&gt;Email Us&lt;/a&gt;&lt;/p&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>The code output will be like this:</p>
+              <li>
+                <a href="mailto:contact@example.com">Email Us</a> (Clicking it
+                opens the mail application. )
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Link with Anchor (Jump Link):</div>
+            <div class="contentText">
+              <p>
+                To create a link that jumps to a specific section on the same
+                page, use the <code class="item">id</code> attribute on the
+                target element, and reference it with the
+                <code class="item">#</code> symbol in the
+                <code class="item">href</code> attribute.
+              </p>
+              <div class="Example">Example:</div>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;div id="targetAttribute" >Link with Target Attribute: &lt;/div&gt;
+                              ...
+                              ...
+                  &lt;p&gt;Example: &lt;a href="#targetAttribute">Jump to Target Attribute Part&lt;/a&gt;&lt;/p&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>The code output will be like this:</p>
+              <li>
+                <a href="#targetAttribute">Jump to Target Attribute Part</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Adding a Favicon</div>
+            <div class="contentText">
+              <p>
+                A <span class="item">favicon</span> is a small image displayed
+                next to the page title in the browser tab. It is written in
+                <span class="item">&lt;head&gt;</span> section.
+              </p>
+              <p>
+                You can use any image you like as your favicon. You can also
+                create your own favicon on sites like
+                <a href="https://www.favicon.cc">https://www.favicon.cc.</a>
+              </p>
+              <div class="example">Example:</div>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                 &lt;link rel="icon" type="image/png" href="images/html_icon.png"&gt;&lt;/link&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                Your browser tab should now display your favicon image to the
+                left of the page title. The code output will be like this:
+              </p>
+            </div>
+            <div class="codeArea extraDiv">
+              <img
+                src="images/favicon.png"
+                alt=""
+                width="100%"
+                style="border-radius: 5%"
+              />
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
