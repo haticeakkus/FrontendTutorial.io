@@ -28,9 +28,9 @@ body {
       .linkArea {
         width: 48%;
         padding: 50px 0;
-        .seperatedDivs{
-            display: flex;
-            justify-content: space-around;
+        .seperatedDivs {
+          display: flex;
+          justify-content: space-around;
         }
       }
       .codeArea {
@@ -69,16 +69,16 @@ body {
     main {
       .allArea {
         display: block;
-        .linkArea{
-            margin: auto;
-            width: 100%;
-            padding: 35px;
-            .seperatedDivs{
-                display: block;
-            }
+        .linkArea {
+          margin: auto;
+          width: 100%;
+          padding: 35px;
+          .seperatedDivs {
+            display: block;
+          }
         }
-        .codeArea{
-            width: 80%;
+        .codeArea {
+          width: 80%;
         }
       }
       .allAreaWelcome {
@@ -95,9 +95,9 @@ body {
 @media screen and (max-width: 700px) {
   body {
     main {
-        a {
-            font-size: 16px;
-          }
+      a {
+        font-size: 16px;
+      }
       .allAreaWelcome {
         width: 80%;
         .welcomeArea {
