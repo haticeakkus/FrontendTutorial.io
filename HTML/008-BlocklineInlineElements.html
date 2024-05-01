@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockline And Inline Level Elements</title>
+    <link rel="stylesheet" href="../template/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../template/img/icons/iconHTML.png"
+    />
+    <style>
+      .blockline {
+        border-radius: 5px;
+        background-color: purple;
+        margin: 10px 0;
+      }
+      .semantics {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .kapsar {
+        font-size: 8em;
+      }
+      .inline {
+        background-color: blueviolet;
+      }
+      .elements {
+        column-count: 5;
+        column-width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Blockline And Inline Level Elements</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                Every element on HTML takes up space in the web page. There are
+                two types of element depend on how they take place on web page:
+              </p>
+              <p>
+                <span class="item">1-Blockline Elements</span>
+                <br />
+                <span class="item">2-Inline Elements</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Blockline Elements</div>
+            <div class="contentText">
+              <p>
+                These elements occupy the entire width of its row although they
+                are not completely fill it. An extra element cannot be contained
+                next to blockline elements as you can see below:
+              </p>
+            </div>
+            <div class="blockline">This is a blockline element.</div>
+            <div class="blockline">This is another blockline element.</div>
+            <br />
+            <div class="contentTitle">Blockline elements are:</div>
+            <br />
+            <div class="elements">
+              <div class="contentText">
+                <p><span class="item">&lt;address&gt;</span></p>
+                <p><span class="item">&lt;article&gt;</span></p>
+                <p><span class="item">&lt;aside&gt;</span></p>
+                <p><span class="item">&lt;blockquote&gt;</span></p>
+                <p><span class="item">&lt;canvas&gt;</span></p>
+                <p><span class="item">&lt;dd&gt;</span></p>
+                <p><span class="item">&lt;div&gt;</span></p>
+                <p><span class="item">&lt;dl&gt;</span></p>
+                <p><span class="item">&lt;dt&gt;</span></p>
+                <p><span class="item">&lt;fieldset&gt;</span></p>
+                <p><span class="item">&lt;figcaption&gt;</span></p>
+                <p><span class="item">&lt;figure&gt;</span></p>
+                <p><span class="item">&lt;footer&gt;</span></p>
+                <p><span class="item">&lt;form&gt;</span></p>
+                <p><span class="item">&lt;h1&gt;-&lt;h6&gt;</span></p>
+                <p><span class="item">&lt;header&gt;</span></p>
+                <p><span class="item">&lt;hr&gt;</span></p>
+                <p><span class="item">&lt;li&gt;</span></p>
+                <p><span class="item">&lt;main&gt;</span></p>
+                <p><span class="item">&lt;nav&gt;</span></p>
+                <p><span class="item">&lt;noscript&gt;</span></p>
+                <p><span class="item">&lt;ol&gt;</span></p>
+                <p><span class="item">&lt;p&gt;</span></p>
+                <p><span class="item">&lt;pre&gt;</span></p>
+                <p><span class="item">&lt;section&gt;</span></p>
+                <p><span class="item">&lt;table&gt;</span></p>
+                <p><span class="item">&lt;tfoot&gt;</span></p>
+                <p><span class="item">&lt;ul&gt;</span></p>
+                <p><span class="item">&lt;video&gt;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Inline Elements</div>
+            <div class="contentText">
+              <p>
+                Inline elements occupy only their own width and allow other
+                elements next to them
+                <span class="item">which are inline, too</span>.
+              </p>
+            </div>
+            <div>
+              This
+              <a
+                target="_blank"
+                href="https://www.w3schools.com/tags/tag_div.ASP"
+                >div</a
+              >
+              contains <span class="inline">inline</span> <b>elements</b> on it.
+            </div>
+            <br />
+            <div class="contentTitle"><p>Inline elements are:</p></div>
+            <br />
+            <div class="elements">
+              <div class="contentText">
+                <p><span class="item">&lt;a&gt;</span></p>
+                <p><span class="item">&lt;abbr&gt;</span></p>
+                <p><span class="item">&lt;acronym&gt;</span></p>
+                <p><span class="item">&lt;b&gt;</span></p>
+                <p><span class="item">&lt;bdo&gt;</span></p>
+                <p><span class="item">&lt;big&gt;</span></p>
+                <p><span class="item">&lt;br&gt;</span></p>
+                <p><span class="item">&lt;button&gt;</span></p>
+                <p><span class="item">&lt;cite&gt;</span></p>
+                <p><span class="item">&lt;code&gt;</span></p>
+                <p><span class="item">&lt;dfn&gt;</span></p>
+                <p><span class="item">&lt;em&gt;</span></p>
+                <p><span class="item">&lt;i&gt;</span></p>
+                <p><span class="item">&lt;img&gt;</span></p>
+                <p><span class="item">&lt;input&gt;</span></p>
+                <p><span class="item">&lt;kbd&gt;</span></p>
+                <p><span class="item">&lt;label&gt;</span></p>
+                <p><span class="item">&lt;map&gt;</span></p>
+                <p><span class="item">&lt;object&gt;</span></p>
+                <p><span class="item">&lt;output&gt;</span></p>
+                <p><span class="item">&lt;q&gt;</span></p>
+                <p><span class="item">&lt;samp&gt;</span></p>
+                <p><span class="item">&lt;script&gt;</span></p>
+                <p><span class="item">&lt;select&gt;</span></p>
+                <p><span class="item">&lt;small&gt;</span></p>
+                <p><span class="item">&lt;span&gt;</span></p>
+                <p><span class="item">&lt;strong&gt;</span></p>
+                <p><span class="item">&lt;sub&gt;</span></p>
+                <p><span class="item">&lt;textarea&gt;</span></p>
+                <p><span class="item">&lt;time&gt;</span></p>
+                <p><span class="item">&lt;tt&gt;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br>
+  </body>
+</html>
