@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <link rel="stylesheet" href="../template/style.css" />
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+    <style>
+      .break {
+        margin-bottom: 30px;
+      }
+      .extraDiv {
+        margin: 0 auto 30px;
+        border-radius: 40px;
+        background-color: rgba(56, 38, 67, 0.5);
+        width: fit-content;
+        padding: 40px;
+      }
+      .vectors img:nth-child(6) {
+        width: 100%;
+        top: 3300px;
+        left: 0px;
+        rotate: 180deg;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">HTML Lists</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                HTML lists allow web developers to group a set of related items
+                in lists.
+              </p>
+            </div>
+            <div class="contentTitle">Unordered HTML List</div>
+            <div class="contentText">
+              <p>
+                An unordered list starts with the
+                <span class="item">&lt;ul&gt;</span> tag. Each list item starts
+                with the <span class="item">&lt;li&gt; </span> tag.
+              </p>
+              <p>
+                The list items will be marked with bullets (small black circles)
+                by default:
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">&lt;ul&gt;</span>  
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;li&gt;Item 3&lt;/li&gt;
+                  <span class="item">&lt;/ul&gt; </span></pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Ordered HTML List</div>
+            <div class="contentText">
+              <p>
+                An ordered list starts with the
+                <span class="item">&lt;ol&gt;</span> tag. Each list item starts
+                with the <span class="item">&lt;li&gt;</span> tag.
+              </p>
+              <p>The list items will be marked with numbers by default:</p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">&lt;ol&gt;</span>     
+                    &lt;li&gt;First item&lt;/li&gt;
+                    &lt;li&gt;Second item&lt;/li&gt;
+                    &lt;li&gt;Third item&lt;/li&gt;
+                  <span class="item">&lt;/ol&gt;</span></pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ol>
+            </div>
+            <div class="contentText">
+              <p>
+                You can change the list sorting type or start from any sign you
+                want.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;ol <span class="item">type="a" start="3"</span>&gt;
+                    &lt;li&gt;First item&lt;/li&gt;
+                    &lt;li&gt;Second item&lt;/li&gt;
+                    &lt;li&gt;Third item&lt;/li&gt;
+                  &lt;/ol&gt; </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>This code starts from c:</p>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <ol type="a" start="3">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Definition List</div>
+            <div class="contentText">
+              <p>
+                The <span class="item">&lt;dl&gt;</span> tag is used in
+                conjunction with <span class="item">&lt;dt&gt;</span> (defines
+                terms/names) and <span class="item">&lt;dd&gt;</span> (describes
+                each term/name).
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;h2&gt;Definition List (dl):&lt;/h2&gt;
+                  &lt;p&gt;A definition list displays elements in definition form like in dictionary.&lt;/p&gt;
+                  <span class="item">&lt;dl&gt;</span>    
+                      &lt;dt&gt;HTML&lt;/dt&gt;
+                      &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+                      &lt;dt&gt;CSS&lt;/dt&gt;
+                      &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+                      &lt;dt&gt;JS&lt;/dt&gt;
+                      &lt;dd&gt;JavaScript&lt;/dd&gt;
+                  <span class="item">&lt;/dl&gt;</span></pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <h4>Definition List (dl):</h4>
+              <p>
+                A definition list displays elements in definition form like in
+                dictionary.
+              </p>
+              <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Nested Lists</div>
+            <div class="contentText">
+              <p>
+                You can also nest lists inside other lists for hierarchical
+                structures.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;ul&gt;
+                      &lt;li&gt;Main Item 1
+                        &lt;ul&gt;
+                          &lt;li&gt;Sub Item 1&lt;/li&gt;
+                          &lt;li&gt;Sub Item 2&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;Main Item 2&lt;/li&gt;
+                      &lt;li&gt;Main Item 3
+                        &lt;ul&gt;
+                          &lt;li&gt;Sub Item 3&lt;/li&gt;
+                          &lt;li&gt;Sub Item 4&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                  &lt;/ul&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <img
+                src="images/nested_list.png"
+                alt=""
+                style="border-radius: 3%; height: 200px; max-width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+      <br /><br />
+    </main>
+    <br /><br /><br>
+  </body>
+</html>
