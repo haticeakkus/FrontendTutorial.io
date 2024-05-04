@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDs And Classes</title>
+    <link rel="stylesheet" href="../template/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../template/img/icons/iconHTML.png"
+    />
+    <style>
+      .boxes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .box {
+        margin: 0 auto;
+        border-radius: 8px;
+        display: grid;
+        place-content: center;
+        margin-bottom: 20px;
+      }
+      .myClass {
+        width: 100px;
+        height: 100px;
+        background-color: var(--primaryBoxColor);
+      }
+      #myId {
+        width: 150px;
+        height: 150px;
+        background-color: var(--secondaryBoxColor);
+      }
+      .differencesBox {
+        height: 50%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-around;
+      }
+      .differencesBox > div {
+        border-radius: 20px;
+        width: 45%;
+        background-color: rgba(56, 38, 67, 0.5);
+        padding: 30px 40px 30px 60px;
+      }
+      .inputBox {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      /* for responsive design. You may overlook this part. */
+      @media screen and (max-width: 1200px) {
+        .differencesBox {
+          display: block;
+        }
+        .differencesBox > div {
+          margin: 10px auto;
+          border-radius: 20px;
+          width: 100%;
+        }
+        .boxes {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">IDs And Classes</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">What are These?</div>
+            <div class="contentText">
+              <p>
+                Selectors are used to identify elements and organize the web
+                page. ID and class are a way to do this.
+              </p>
+              <p>
+                The way how to add a class or ID
+                <span class="item">in HTML</span> to an element is as follows:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;div class="myClass"&gt;
+                    &lt;div class="myId"&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                After class or id value is set, these items can be selected
+                <span class="item">from CSS</span>.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .myClass{
+                        width: 100px;
+                        height: 100px;
+                        background-color: #7364d273;
+                    }
+                    #myId{
+                        width: 50%;
+                        height: 200px;
+                        background-color: #858ae3b6;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="boxes">
+              <!--The 'box' class is to organize the boxes. You may overlook it. -->
+              <div class="box myClass">Class Box</div>
+              <div class="box" id="myId">ID Box</div>
+            </div>
+            <div class="contentText">
+              <p>
+                With this way, we identified two divs in HTML.After that in CSS,
+                we added features to these divs via the ID and class selectors.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Differences Between ID And Class</div>
+            <div class="contentText">
+              <p>
+                Although both of them are used to do same task, there is
+                differences between them:
+              </p>
+            </div>
+            <div class="differencesBox">
+              <div class="differenceClass">
+                <p><span class="item">Class</span></p>
+                <ul>
+                  <li>Can be used to mark multiple elements in a page</li>
+                  <br />
+                  <li>Specificity level is 10.</li>
+                  <br />
+                  <li>May select a group of element.</li>
+                </ul>
+              </div>
+              <div class="differenceId">
+                <p><span class="item">ID</span></p>
+                <ul>
+                  <li>Can only be used to mark a single element in a page</li>
+                  <br />
+                  <li>Specificity level is 100.</li>
+                  <br />
+                  <li>Can only select one specific element.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                <span class="item">Specificity</span> topic has a comprehensive
+                explanation at the end of the 'CSS - Selectors' file.
+              </p>
+            </div>
+            <div class="contentTitle">
+              <span class="item">Important Footnote</span>
+            </div>
+            <div class="contentText">
+              <p>
+                ID has also another functions. One of them is creating a
+                correlation between the label and the form elements:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form action=""&gt;
+                        &lt;label for="correlation"&gt;Your Name Here:&lt;/label&gt;
+                        &lt;input id="correlation" type="text"&gt;
+                    &lt;/form&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="inputBox">
+              <form action="">
+                <label for="correlation">Your Name Here:</label>
+                <input id="correlation" type="text" />
+              </form>
+            </div>
+            <br />
+            <div class="contentText">
+              <p>
+                If you click on <span class="item">'Your Name Here'</span> text,
+                the textbox right of it will be focused. This is because label
+                and input element is matched with ID.
+              </p>
+              <p>
+                ID has several more functions like above. Therefore, class is
+                more proper to use as <span class="item">selector</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br>
+  </body>
+</html>
