@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Element Attributes</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../template/img/icons/iconHTML.png"
+    />
+    <link rel="stylesheet" href="../template/style.css" />
+    <style>
+      .break {
+        margin-bottom: 30px;
+      }
+      .extraDiv {
+        max-width: 100%;
+        width: fit-content;
+        margin: 0 auto 30px;
+        border: 5px solid rgba(56, 38, 67, 0.5);
+        border-radius: 40px;
+        background-color: #211e2d;
+        padding: 40px;
+      }
+      h3 {
+        margin: 10px 0px;
+      }
+      li {
+        padding-bottom: 10px;
+      }
+      option,
+      select,
+      optgroup,
+      textarea,
+      input {
+        color: #211e2d;
+      }
+      .vectors img:nth-child(6) {
+        width: 100%;
+        top: 3300px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(7) {
+        width: 100%;
+        top: 5800px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(8) {
+        width: 100%;
+        left: 0px;
+        top: 7100px;
+      }
+      .vectors img:nth-child(9) {
+        width: 100%;
+        left: 0px;
+        top: 10000px;
+      }
+      .vectors img:nth-child(10) {
+        width: 100%;
+        top: 12000px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(11) {
+        width: 100%;
+        left: 0px;
+        top: 14000px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">HTML Form</div>
+        <img
+          class="vector2"
+          src="../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              An HTML Form is a section of the document that collects input from
+              the user. The input from the user is generally sent to a server
+              (Web servers, Mail clients, etc). We use the HTML
+              <span class="item">&lt;form&gt;</span>
+              element to create forms in HTML.
+            </div>
+            <br />
+            <div class="contentTitle">Example HTML Form</div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form&gt;
+                      &lt;label for="firstname"&gt;First name: &lt;/label&gt;
+                      &lt;input type="text" name="firstname" required&gt;
+                      &lt;br&gt;
+                      &lt;label for="lastname"&gt;Last name: &lt;/label&gt;
+                      &lt;input type="text" name="lastname" required&gt;
+                      &lt;br&gt;
+                      &lt;label for="email"&gt;Email: &lt;/label&gt;
+                      &lt;input type="email" name="email" required&gt;
+                      &lt;br&gt;
+                      &lt;label for="password"&gt;Password: &lt;/label&gt;
+                      &lt;input type="password" name="password" required&gt;
+                      &lt;br&gt;
+                      &lt;input type="submit" value="Login!"&gt;
+                    &lt;/form&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <form>
+                <label for="firstname">First name: </label>
+                <input type="text" name="firstname" required />
+                <br />
+                <label for="lastname">Last name: </label>
+                <input type="text" name="lastname" required />
+                <br />
+                <label for="email">Email: </label>
+                <input type="email" name="email" required />
+                <br />
+                <label for="password">Password: </label>
+                <input type="password" name="password" required />
+                <br />
+                <input type="submit" value="Login!" style="font-size: medium" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="topicSubTitle">Form Attributes</div>
+        <img
+          class="vector2"
+          src="../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                The HTML &lt;form&gt; element contains several attributes for
+                controlling data submission. They are as follows:
+              </p>
+            </div>
+            <div class="contentTitle">action</div>
+            <div class="contentText">
+              <p>
+                The <span class="item">action</span> attributes define the
+                action to be performed when the form is submitted. It is usually
+                the url for the server where the form data is to be sent.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form action="/login"&gt;
+                        &lt;label for="email"&gt;Email:&lt;/label&gt;
+                        &lt;input type="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+                        &lt;label for="password"&gt;Password:&lt;/label&gt;
+                        &lt;input type="password" name="password"&gt;&lt;br&gt;&lt;br&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, when the form is submitted, the data from
+                the form is sent to /login.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">method</div>
+            <div class="contentText">
+              <p>
+                The <span class="item">method</span> attribute defines the HTTP
+                method to be used when the form is submitted. There are 3
+                possible values for the method attribute:
+              </p>
+              <li>
+                <span class="item">post:</span> It is used to send data to a
+                server to update a resource.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form method="post"&gt;
+                      ...
+                    &lt;/form&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">get:</span> It is used to request data from a
+                specified resource.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form method="get"&gt;
+                      ...
+                    &lt;/form&gt;  </pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">dialog:</span> This method is used when the
+                form is inside a &lt;dialog&gt; element. Using this method
+                closes the dialog and sends a form-submit event.
+              </li>
+              <p>
+                In the above example, when the form is submitted, the data from
+                the form is sent to /login.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">target</div>
+            <div class="contentText">
+              <p>
+                It specifies where to display the response received after the
+                form is submitted. Similar to the target attribute in &lt;a&gt;
+                tags, the target attribute has four possible values.
+              </p>
+              <li>
+                <span class="item">_self (default):</span> Load the response
+                into the same browser tab.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form target="_self"&gt;
+                    ...
+                    &lt;/form&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">_blank: </span>Load the response into a new
+                browser tab.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form target="_blank"&gt;
+                      ...
+                    &lt;/form&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">_parent: </span> Load into the parent frame
+                of the current one. If no parent is available,it loads the
+                response into the same tab.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form target="_parent"&gt;
+                      ...
+                    &lt;/form&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">_top:</span> Load the response into the
+                top-level frame. If no parent is available, it loads the
+                response into the same tab.
+              </li>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form target="_top"&gt;
+                      ...
+                    &lt;/form&gt;  </pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">enctype</div>
+            <div class="contentText">
+              <p>
+                It specifies how the form data should be encoded for the
+                request. It is only applicable if we use the POST method.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form method="post" enctype="application/x-www-form-urlencoded"&gt;
+                      ...
+                    &lt;/form&gt;
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, data from the form will be encoded in the
+                x-www-form-urlencoded format (which is the default encoding
+                format).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">name</div>
+            <div class="contentText">
+              <p>
+                It specifies the name of the form. The name is used in
+                Javascript to reference or access this form.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form name="login_form"&gt;
+                      &lt;label for="email"&gt;Email:&lt;/label&gt;
+                      &lt;input type="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;label for="password"&gt;Password:&lt;/label&gt;
+                      &lt;input type="password" name="password"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt; </pre
+                >
+              </div>
+            </div>
+            <p>The above form can be accessed in javascript as:</p>
+
+            <div class="codeArea extraDiv" style="border: none">
+              <span style="font-size: small; background-color: rgba(56, 38, 67)"
+                >document.forms['login_form']</span
+              >
+            </div>
+            <div class="contentText">
+              <p>
+                Although it is possible to use name to access form elements in
+                javascript, it is recommended to use id to access the form
+                elements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="topicSubTitle">Form Elements</div>
+        <img
+          class="vector2"
+          src="../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                HTML form elements are used to store user input. There are
+                different types of , form elements such as the text box, check
+                box, drop-down, submit button, etc. For example,
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form&gt;
+                      &lt;label for="name"&gt;Name:&lt;/label&gt;
+                      &lt;input type="text" name="name"&gt;&lt;br&gt;&lt;br&gt;
+                      &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+                      &lt;input type="radio" name="gender" id="male" value="male"&gt;
+                      &lt;label for="male"&gt;Male&lt;/label&gt;
+                      &lt;input type="radio" name="gender" id="female" value="female"&gt;
+                      &lt;label for="female"&gt;Female&lt;/label&gt; &lt;br&gt;&lt;br&gt;
+                      &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" /><br /><br />
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="female">Female</label> <br /><br />
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML &lt;input&gt; tag</div>
+            <div class="contentText">
+              <p>
+                The HTML &lt;input&gt; tag defines the field where the user can
+                enter data. For example,
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;input type="text" name="firstname"&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <br />
+              <input type="text" name="firstname" />
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">type</span> - determines the type of input
+                the &lt;input&gt; tag takes
+              </li>
+              <li>
+                <span class="item">name</span> - specifies the name of the input
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML &lt;label&gt; tag</div>
+            <div class="contentText">
+              <p>
+                The HTML label tag is used to create a caption for a form
+                element. The text inside the &lt;label&gt; tag is shown to the
+                user.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;label for="firstname"&gt;First Name&lt;/label&gt;
+                    &lt;input type="text" name="firstname" id="firstname"&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <br />
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" />
+            </div>
+            <div class="contentText">
+              <p>
+                The for attribute is used to associate a label with the form
+                element. The value for the for attribute is set as the id of the
+                form element which is firstname in the above example.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML &lt;button&gt; tag</div>
+            <div class="contentText">
+              <p>
+                The &lt;button&gt; tag defines a clickable button. It performs a
+                programmable action, such as submitting a form or opening a
+                dialog when clicked.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;button type="button"&gt;Click me&lt;/button&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <br />
+              <button type="button" style="font-size: larger">Click me</button>
+            </div>
+            <div class="contentText">
+              <p>
+                The type attribute determines the action performed by clicking
+                the button. It has 3 possible values:
+              </p>
+              <li>
+                <span class="item">submit </span>- If the value of type is
+                submit, the button click action submits the form.
+              </li>
+              <li>
+                <span class="item">reset</span> - If the value of type is reset,
+                the button click action resets the value of all form elements to
+                their initial value. For example,
+              </li>
+              <li>
+                <span class="item">button</span> - If the value of type is
+                button, the button click action does not have a default
+                function. Generally, javascript is used to add functionality to
+                such buttons.
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">
+              HTML &lt;select&gt;, &lt;option&gt; and &lt;optgroup&gt; tags
+            </div>
+            <div class="contentText">
+              <p>
+                The HTML <span class="item">&lt;select&gt;</span> tag is used to
+                create a menu of options. Each of the options is represented by
+                the &lt;option&gt; tag.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;label for="language"&gt;Select a programming language:&lt;/label&gt;
+
+                    &lt;select id="language"&gt;
+                      &lt;option value="java"&gt;Java&lt;/option&gt;
+                      &lt;option value="python"&gt;Python&lt;/option&gt;
+                      &lt;option value="js"&gt;Javascript&lt;/option&gt;
+                    &lt;/select&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="language">Select a programming language:</label>
+              <select id="language">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="js">Javascript</option>
+              </select>
+            </div>
+            <div class="contentText">
+              <p>
+                Additionally, we can also group option elements inside the
+                <span class="item">&lt;optgroup&gt;</span> tag to create a group
+                of options. For example,
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;label for="language"&gt;Select a programming language:&lt;/label&gt;
+                    &lt;select id="language"&gt;
+                      &lt;optgroup label="Frontend"&gt;
+                        &lt;option value="html"&gt;HTML&lt;/option&gt;
+                        &lt;option value="css"&gt;CSS&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                      &lt;optgroup label="Backend"&gt;
+                        &lt;option value="python"&gt;Python&lt;/option&gt;
+                        &lt;option value="java"&gt;Java&lt;/option&gt;
+                      &lt;/optgroup&gt;
+                    &lt;/select&gt;
+                </pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="language">Select a programming language:</label>
+              <select id="language">
+                <optgroup label="Frontend">
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                </optgroup>
+                <optgroup label="Backend">
+                  <option value="python">Python</option>
+                  <option value="java">Java</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML &lt;textarea&gt; tag</div>
+            <div class="contentText">
+              <p>
+                The HTML <span class="item">&lt;textarea&gt;</span> tag is used
+                to define a customizable multiline text input field.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;textarea rows="10" cols="30"> Type something…&lt;/textarea&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <textarea rows="10" cols="30"> Type something…</textarea>
+            </div>
+            <div class="contentText">
+              <p>
+                Here, the rows and cols attributes represent the rows and
+                columns of the text field.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML &lt;fieldset&gt; tag</div>
+            <div class="contentText">
+              <p>
+                The HTML <span class="item">&lt;fieldset&gt;</span> tag is used
+                to group similar form elements. It is a presentational tag and
+                does not affect the data in the form.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form&gt;
+                      &lt;fieldset&gt;
+                        &lt;label for="firstname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+                        &lt;input type="text" id="firstname" name="fname"&gt;&lt;br&gt;
+                        &lt;label for="lastname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+                        &lt;input type="text" id="lastname" name="lname"&gt;&lt;br&gt;
+                      &lt;/fieldset&gt;
+                    &lt;/form&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <form>
+                <fieldset>
+                  <label for="firstname">First name:</label><br />
+                  <input type="text" id="firstname" name="fname" /><br />
+                  <label for="lastname">Last name:</label><br />
+                  <input type="text" id="lastname" name="lname" /><br />
+                </fieldset>
+              </form>
+            </div>
+            <div class="contentText">
+              <p>The border is from the &lt;fieldset&gt; element.</p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML &lt;legend&gt; tag</div>
+            <div class="contentText">
+              <p>
+                The HTML <span class="item">&lt;legend&gt;</span> tag is another
+                presentational tag used to give a caption to a &lt;fieldset&gt;
+                element. It acts similarly to an HTML &lt;label&gt; tag. For
+                example,
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form&gt;
+                        &lt;fieldset&gt;
+                            &lt;legend&gt;Name&lt;/legend&gt;
+                            &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+                            &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;
+                        &lt;/fieldset&gt;
+                    &lt;/form&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <form>
+                <fieldset>
+                  <legend>Name</legend>
+                  <label for="fname">First name:</label><br />
+                  <input type="text" id="fname" name="fname" /><br />
+                  <label for="lname">Last name:</label><br />
+                  <input type="text" id="lname" name="lname" /><br />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
