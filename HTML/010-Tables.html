@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="../template/style.css" />
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+    <style>
+      .break {
+        margin-bottom: 30px;
+      }
+      .extraDiv {
+        max-width: 100%;
+        width: fit-content;
+        margin: 0 auto 30px;
+        border: 5px solid rgba(56, 38, 67, 0.5);
+        border-radius: 40px;
+        background-color: #211e2d;
+        padding: 40px;
+      }
+      h3,
+      h4 {
+        margin: 10px 0px;
+      }
+      ol {
+        padding-left: 20px;
+      }
+      ul {
+        padding-left: 40px;
+        padding-top: 10px;
+      }
+      li {
+        padding-bottom: 10px;
+      }
+      input {
+        color: #211e2d;
+      }
+      .exampleTable {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .th1,
+      .td1 {
+        border: 3px solid black;
+        padding: 8px;
+      }
+      .exampleTableDotted {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .thDotted,
+      .tdDotted {
+        border: 3px dotted black;
+        padding: 8px;
+        text-align: left;
+      }
+      .exampleTableRounded {
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 20%;
+      }
+      .vectors img:nth-child(6) {
+        width: 100%;
+        top: 3300px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(7) {
+        width: 100%;
+        top: 5800px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(8) {
+        width: 100%;
+        left: 0px;
+        top: 7100px;
+      }
+      .vectors img:nth-child(9) {
+        width: 100%;
+        left: 0px;
+        top: 10000px;
+      }
+      .vectors img:nth-child(10) {
+        width: 100%;
+        top: 12000px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(11) {
+        width: 100%;
+        left: 0px;
+        top: 14000px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+    </div>
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">HTML Table</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                The HTML table tag (&lt;table&gt;) is used to represent data in
+                a structured way by creating a table.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table border="1"&gt;
+                      &lt;tr&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th&gt;Age&lt;/th&gt;  
+                        &lt;th&gt;Country&lt;/th&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Harry Depp&lt;/td&gt;
+                        &lt;td&gt;28&lt;/td&gt;
+                        &lt;td&gt;Britain&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;John Smith&lt;/td&gt;
+                        &lt;td&gt;35&lt;/td&gt;
+                        &lt;td&gt;USA&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Ram Krishna&lt;/td&gt;
+                        &lt;td&gt;19&lt;/td&gt;
+                        &lt;td&gt;Nepal&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;</pre
+                >
+              </div>
+            </div>
+            <br />
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table border="1">
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td>Harry Depp</td>
+                  <td>28</td>
+                  <td>Britain</td>
+                </tr>
+                <tr>
+                  <td>John Smith</td>
+                  <td>35</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>Ram Krishna</td>
+                  <td>19</td>
+                  <td>Nepal</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, you can see we have used multiple tags to
+                create a table in HTML.
+              </p>
+              <p>
+                The border = 1 property is given to define the boundaries of the
+                table. (Table borders will be explained at the end of this
+                lesson. You can review to border section by clicking
+                <a href="#border"><span class="item">here</span></a
+                >.)
+              </p>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="contentText">
+              <h3>Tags</h3>
+              <ol>
+                <li>
+                  <a href="#table"><span class="item">&lt;table&gt;</span></a> -
+                  Defines a table
+                </li>
+
+                <li>
+                  <a href="#row"><span class="item">&lt;tr&gt;</span></a> -
+                  Defines a row in a table
+                </li>
+
+                <li>
+                  <a href="#cell"><span class="item">&lt;td&gt;</span></a> -
+                  Defines a cell in a table
+                </li>
+
+                <li>
+                  <a href="#heading"><span class="item">&lt;th&gt;</span></a> -
+                  Defines a header cell in a table
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="table">
+          <div class="textContent">
+            <div class="contentTitle">Table Tag &lt;table&gt;</div>
+            <div class="contentText">
+              <p>The &lt;table&gt; tag is used to define a table.</p>
+              <p>It consists of table cells inside rows and columns.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt;
+                      ...
+                      ...
+                    &lt;/table&gt; </pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="row">
+          <div class="textContent">
+            <div class="contentTitle">Table Row &lt;tr&gt;</div>
+            <div class="contentText">
+              <p>The &lt;tr&gt;tag is used to define a row in a table.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt;
+                      &lt;tr&gt;
+                      ...
+                      &lt;/tr&gt;
+                    &lt;/table&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                The table row can include either table heading &lt;th&gt; or
+                table data &lt;td&gt;.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table border="1"&gt;
+                      &lt;tr&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th&gt;Country&lt;/th&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Prasanna&lt;/td&gt;
+                        &lt;td&gt;Nepal&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;Simon&lt;/td&gt;
+                        &lt;td&gt;USA&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <table border="1">
+                <tr>
+                  <th>Name</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td>Prasanna</td>
+                  <td>Nepal</td>
+                </tr>
+                <tr>
+                  <td>Simon</td>
+                  <td>USA</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="cell">
+          <div class="textContent">
+            <div class="contentTitle">Table Cell &lt;td&gt;</div>
+            <div class="contentText">
+              <p>
+                The &lt;td&gt; tag is used to define table cells (data). The
+                table cells store data to be displayed in the table.
+              </p>
+              <p>
+                Table cells are generally inside the table row or table headers.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;table border="1"&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Apple&lt;/td&gt;
+                    &lt;td&gt;Mango&lt;/td&gt;
+                    &lt;td&gt;Orange&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;/table&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <table border="1">
+                <tr>
+                  <td>Apple</td>
+                  <td>Mango</td>
+                  <td>Orange</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, &lt;td&gt;Apple&lt;/td&gt;,
+                &lt;td&gt;Mango&lt;/td&gt;and &lt;td&gt;Orange&lt;/td&gt; are
+                table cells.
+              </p>
+              <p>
+                <b>Note:</b> A table cell can contain all sorts of HTML
+                elements: text, images, lists, links, other tables, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="heading">
+          <div class="textContent">
+            <div class="contentTitle">Table Heading &lt;th&gt;</div>
+            <div class="contentText">
+              <p>
+                The &lt;th&gt;tag is used to define a table header. It is
+                generally the top row of the table.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;table border="1"&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Item&lt;/th&gt;
+                      &lt;th&gt;Count&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Mango&lt;/td&gt;
+                      &lt;td&gt;125&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Orange&lt;/td&gt;
+                      &lt;td&gt;75&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table border="1">
+                <tr>
+                  <th>Item</th>
+                  <th>Count</th>
+                </tr>
+                <tr>
+                  <td>Mango</td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>Orange</td>
+                  <td>75</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, Item and Count are table headers and they
+                are used to represent the category of data in a particular row.
+              </p>
+              <p>
+                Here, the styling of the table headers is bold and
+                center-aligned. This is because the
+                <th>tag has some default styling.</th>
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Topic Title -->
+        <div class="topicSubTitle">HTML Table Attributes</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>Topics to be covered in this section:</p>
+              <ol>
+                <li>
+                  <a href="#tableParts"
+                    ><span class="item">Table Parts</span></a
+                  >
+                  <ul>
+                    <li>
+                      <a href="#head"><span class="item">Head</span></a>
+                    </li>
+                    <li>
+                      <a href="#body"><span class="item">Body</span></a>
+                    </li>
+                    <li>
+                      <a href="#footer"><span class="item">Footer</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#colspan"><span class="item">Colspan</span></a>
+                </li>
+                <li>
+                  <a href="#rowspan"><span class="item">Rowspan</span></a>
+                </li>
+                <li>
+                  <a href="#caption"><span class="item">Caption</span></a>
+                </li>
+                <li>
+                  <a href="#border"><span class="item">Border</span></a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="tableParts">
+          <div class="textContent" id="head">
+            <div class="contentText">
+              <div class="contentTitle">1 - Table Parts</div>
+              <p>
+                The HTML table can be divided into three parts: a header, a
+                body, and a footer.
+              </p>
+              <br />
+              <h3><li>Table Header (&lt;thead&gt;)</li></h3>
+              <p>
+                We use the <span class="item">&lt;thead&gt;</span> tag to add a
+                table head. The &lt;thead&gt; tag must come before any other
+                tags inside a table.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt;
+                    <span class="item">&lt;thead&gt;</span>   
+                        &lt;tr&gt;
+                          &lt;th&gt;Head1&lt;/th&gt;
+                          &lt;th&gt;Head2&lt;/th&gt;
+                        &lt;/tr&gt;
+                    <span class="item">&lt;/thead&gt;</span>   
+                    &lt;/table&gt;  </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                The content of &lt;thead&gt; is placed on the top part of the
+                table and we usually place the rows with table headers inside
+                the &lt;thead&gt; tag.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="textContent">
+            <div class="contentText">
+              <h3><li>Table Body (&lt;tbody&gt;)</li></h3>
+              <p>
+                We use the <span class="item">&lt;tbody&gt;</span> tag to add a
+                table body. The &lt;tbody&gt; tag must come after &lt;thead&gt;
+                and before any other tags inside a table.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt;
+                      &lt;thead&gt;
+                        ...
+                      &lt;/thead&gt;
+                      <span class="item">&lt;tbody&gt;</span>   
+                        &lt;tr&gt;
+                          &lt;td&gt;Cell 1&lt;/td&gt;
+                          &lt;td&gt;Cell 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                      <span class="item">&lt;/tbody&gt;</span>   
+                      ...
+                    &lt;/table&gt;  </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              The content of &lt;tbody&gt; is placed on the center part of the
+              table and we usually place the rows with the content we want to
+              represent in the &lt;tbody&gt;.
+            </div>
+          </div>
+          <br>
+          <div class="textContent">
+            <div class="contentText">
+              <h3><li>Table Footer (&lt;foot&gt;)</li></h3>
+              <p>
+                We use the <span class="item">&lt;foot&gt;</span> tag to add a
+                table footer.
+              </p>
+              <p>
+                The &lt;foot&gt; tag must come after &lt;foot&gt; and before any
+                other tags inside a table.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt;
+                      &lt;thead&gt;
+                        ...
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                        ...
+                      &lt;/tbody&gt;
+                      <span class="item">&lt;tfoot&gt;</span>   
+                        &lt;tr&gt;
+                          &lt;td&gt;foot 1&lt;/td&gt;
+                          &lt;td&gt;foot 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                      <span class="item">&lt;/tfoot&gt;</span>   
+                    &lt;/table&gt; </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                The content of &lt;tbody&gt; is placed on the bottom part of the
+                table and we usually place the rows with the footer in the
+                &lt;foot&gt;.
+              </p>
+            </div>
+          </div>
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                All these tags must be placed inside a &lt;table&gt; tag and
+                must contain at least one &lt;tr&gt;.
+              </p>
+
+              <b>Example: HTML Table Head, Body, and Footer</b>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt; border="1"
+                      &lt;thead&gt;
+                        &lt;tr&gt;
+                          &lt;th&gt;S.N&lt;/th&gt;
+                          &lt;th&gt;Item&lt;/th&gt;
+                          &lt;th&gt;Quantity&lt;/th&gt;
+                        &lt;/tr&gt;
+                      &lt;/thead&gt;
+                      &lt;tbody&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;1&lt;/td&gt;
+                          &lt;td&gt;Apple&lt;/td&gt;
+                          &lt;td&gt;2&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;2&lt;/td&gt;
+                          &lt;td&gt;Mango&lt;/td&gt;
+                          &lt;td&gt;2&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;3&lt;/td&gt;
+                          &lt;td&gt;Orange&lt;/td&gt;
+                          &lt;td&gt;1&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                      &lt;tfoot&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;&lt;/td&gt;
+                          &lt;td&gt;Total&lt;/td&gt;
+                          &lt;td&gt;5&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/tfoot&gt;
+                    &lt;/table&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th>&nbsp;S.N&nbsp;</th>
+                    <th>&nbsp;Item</th>
+                    <th>&nbsp;Quantity&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&nbsp;1</td>
+                    <td>&nbsp;Apple</td>
+                    <td>&nbsp;2</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;2</td>
+                    <td>&nbsp;Mango</td>
+                    <td>&nbsp;2</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;3</td>
+                    <td>&nbsp;Orange</td>
+                    <td>&nbsp;1</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td>&nbsp;Total</td>
+                    <td>&nbsp;5</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="colspan">
+          <div class="textContent">
+            <div class="contentText">
+              <div class="contentTitle">2 - Colspan</div>
+              <p>The colspan attribute merges cells across multiple columns.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;table&gt;
+                      &lt;tr&gt;
+                        &lt;th&gt;S.N&lt;/th&gt;
+                        &lt;th&gt;Item&lt;/th&gt;
+                        &lt;th&gt;Quantity&lt;/th&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Apple&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;Mango&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                       <span class="item"> &lt;td colspan="2"&gt;Total&lt;/td&gt;</span>
+                        &lt;td&gt;4&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;</pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table border="1">
+                <tr>
+                  <th>S.N</th>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Apple</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mango</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Total</td>
+                  <td>4</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, you can see that the last row only has 2
+                cells with one cell occupying 2 columns.
+              </p>
+              <p>
+                The value of the colspan attribute determines how many columns
+                the cell occupies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="rowspan">
+          <div class="textContent">
+            <div class="contentTitle">3 - Rowspan</div>
+            <div class="contentText">
+              <p>The rowspan attribute merges cells across multiple rows.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;table border = "1"&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Name&lt;/th&gt;
+                      &lt;th&gt;Subject&lt;/th&gt;
+                      &lt;th&gt;Marks&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                   <span class="item">&lt;td rowspan="3"&gt;Mark Smith&lt;/td&gt;</span>   
+                      &lt;td&gt;English&lt;/td&gt;
+                      &lt;td&gt;67&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Maths&lt;/td&gt;
+                      &lt;td&gt;82&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Science&lt;/td&gt;
+                      &lt;td&gt;91&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+              </pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table border="1">
+                <tr>
+                  <th>Name</th>
+                  <th>Subject</th>
+                  <th>Marks</th>
+                </tr>
+                <tr>
+                  <td rowspan="3">Mark Smith</td>
+                  <td>English</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>Maths</td>
+                  <td>82</td>
+                </tr>
+                <tr>
+                  <td>Science</td>
+                  <td>91</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contentText">
+              <p>
+                In the above example, you can see that the first column only has
+                2 cells with one cell occupying 2 rows.
+              </p>
+              <p>
+                The value of the rowspan attribute determines how many rows the
+                cell occupies.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="caption">
+          <div class="textContent">
+            <div class="contentTitle">4 - Caption</div>
+            <div class="contentText">
+              <p>
+                The <span class="item">&lt;caption&gt;</span> element acts as
+                the title of the table. It is used to give a short description
+                of the table. It shows up on top of the table
+              </p>
+              <p>
+                The &lt;caption&gt; tag must be the first child of the
+                &lt;table&gt; element.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;table border = "1"&gt;
+                  <span class="item">&lt;caption&gt;Employee Details&lt;/caption&gt;</span>       
+                    &lt;tr&gt;
+                      &lt;th&gt;Name&lt;/th&gt;
+                      &lt;td&gt;Sam&lt;/td&gt;
+                      &lt;td&gt;Steve&lt;/td&gt;
+                      &lt;td&gt;Peggy&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Age&lt;/th&gt;
+                      &lt;td&gt;31&lt;/td&gt;
+                      &lt;td&gt;42&lt;/td&gt;
+                      &lt;td&gt;29&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Gender&lt;/th&gt;
+                      &lt;td&gt;M&lt;/td&gt;
+                      &lt;td&gt;M&lt;/td&gt;
+                      &lt;td&gt;F&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+              </pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table border="1">
+                <caption>
+                  Employee Details
+                </caption>
+                <tr>
+                  <th>Name</th>
+                  <td>Sam</td>
+                  <td>Steve</td>
+                  <td>Peggy</td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td>31</td>
+                  <td>42</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <th>Gender</th>
+                  <td>M</td>
+                  <td>M</td>
+                  <td>F</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="border">
+          <div class="textContent">
+            <div class="contentTitle">5 - Border</div>
+            <div class="contentText">
+              <p>
+                Remember we have used the
+                <span class="item">border</span> attribute in our first example.
+              </p>
+              <p>
+                In HTML, the <b>border</b> attribute is used to add a border to
+                a table and all the cells.
+              </p>
+              <p>
+                We can shape the table using css by giving the table a class
+                named <span class="item">exampleTable</span> .
+              </p>
+              <p>
+                You can try the following codes by opening the <b>style </b>tag
+                inside the <b>head</b> part of your HTML page.
+              </p>
+
+              <p>
+                Below is a basic example of how to apply border styling to an
+                HTML table using CSS:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  &lt;head&gt;
+                  <span class="item">&lt;style&gt;</span> 
+                    .exampleTable {
+                      border-collapse: collapse;
+                      width: 100%;
+                    }
+                  
+                    th, td {
+                      border: 3px solid black;
+                      padding: 8px;
+                      text-align: left;
+                    }
+                  <span class="item">&lt;/style&gt;</span>    
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                  
+                  &lt;table&gt;
+                    &lt;tr&gt;
+                      &lt;th&gt;Product Name&lt;/th&gt;
+                      &lt;th&gt;Price&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Pencil&lt;/td&gt;
+                      &lt;td&gt;$2.50&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Notebook&lt;/td&gt;
+                      &lt;td&gt;$5.00&lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                  
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                  </pre>
+              </div>
+            </div>
+            <p>The table should look like this:</p>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <table class="exampleTable">
+                <tr>
+                  <th class="th1">Product Name</th>
+                  <th class="th1">Price</th>
+                </tr>
+                <tr>
+                  <td class="td1">Pencil</td>
+                  <td class="td1">$2.50</td>
+                </tr>
+                <tr>
+                  <td class="td1">Notebook</td>
+                  <td class="td1">$5.00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="contentText">
+              <p>
+                In this example, the
+                <span class="item">border-collapse</span> property is used to
+                combine table borders, and the border property adds a 3-pixel
+                thick black border to the cells.
+              </p>
+              <p>
+                By using the <span class="item">padding</span> property, a 8-pixel
+                space is given between the data in the cell and the table.
+              </p>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="contentText">
+              <p>Now let's change the border properties and examine:</p>
+              <div class="break"></div>
+
+              <div class="codeArea">
+                <div class="codeContent">
+                  <pre>
+                    .exampleTable {
+                      border-collapse: collapse;
+                      width: 100%;
+                    }
+                    
+                    th, td {
+                      border: 3px dotted black;
+                      padding: 8px;
+                    }
+                </pre
+                  >
+                </div>
+              </div>
+              <div class="codeArea extraDiv">
+                <p>Output:</p>
+                <table class="exampleTableDotted">
+                  <tr>
+                    <th class="thDotted">Product Name</th>
+                    <th class="thDotted">Price</th>
+                  </tr>
+                  <tr>
+                    <td class="tdDotted">Pencil</td>
+                    <td class="tdDotted">$2.50</td>
+                  </tr>
+                  <tr>
+                    <td class="tdDotted">Notebook</td>
+                    <td class="tdDotted">$5.00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                These basic examples of HTML table border styling will give you
+                an idea of how to customize the look of your tables using CSS.
+              </p>
+              <p>
+                By using the extensive options of CSS, you can customize your
+                table with many features such as adding background color,
+                rounding corners.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br>
+  </body>
+</html>
