@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input Attributes</title>
+    <link rel="icon" type="image/png" href="../template/img/icons/iconHTML.png" />
+    <link rel="stylesheet" href="../template/style.css" />
+    <style>
+      .break {
+        margin-bottom: 30px;
+      }
+      .extraDiv {
+        max-width: 100%;
+        width: fit-content;
+        margin: 0 auto 30px;
+        border: 5px solid rgba(56, 38, 67, 0.5);
+        border-radius: 40px;
+        background-color: #211e2d;
+        padding: 40px;
+      }
+      h3 {
+        margin: 10px 0px;
+      }
+      li {
+        padding-bottom: 10px;
+      }
+      ol {
+        padding-left: 30px;
+      }
+      input {
+        color: #211e2d;
+      }
+      .vectors img:nth-child(6) {
+        width: 100%;
+        top: 3300px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(7) {
+        width: 100%;
+        top: 5800px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(8) {
+        width: 100%;
+        left: 0px;
+        top: 7100px;
+      }
+      .vectors img:nth-child(9) {
+        width: 100%;
+        left: 0px;
+        top: 10000px;
+      }
+      .vectors img:nth-child(10) {
+        width: 100%;
+        top: 12000px;
+        left: 0px;
+        rotate: 180deg;
+      }
+      .vectors img:nth-child(11) {
+        width: 100%;
+        left: 0px;
+        top: 14000px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../index.html">FRONTEND</a></div>
+      <img src="../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">HTML</div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Form Input Attributes</div>
+        <img class="vector2" src="../template/img/vectors/Vector 16.png" alt="" />
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML Input Tag</div>
+            <div class="contentText">
+              <p>
+                The HTML <span class="item">&lt;input&gt; </span> tag defines
+                the field where the user can enter data. The type attribute
+                determines what type of user input is taken.
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;input type="text" name="firstname"&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input type="text" name="firstname" />
+            </div>
+            <div class="contentText">
+              <li>
+                <span class="item">type</span> - determines the type of input
+                the &lt;input&gt; tag takes
+              </li>
+              <li>
+                <span class="item">name</span> - specifies the name of the input
+                which is what the data is named as when submitting the data to a
+                server.
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Different Input Types</div>
+            <div class="contentText">
+              <p>The various types of input tags available in HTML5 are:</p>
+              <ol>
+                <li>
+                  <a href="#text"><span class="item">text</span></a> - creates a
+                  single-line text fields (default)
+                </li>
+                <li>
+                  <a href="#button"> <span class="item">button</span></a> -
+                  creates a button with no default functionality
+                </li>
+                <li>
+                  <a href="#checkbox"><span class="item">checkbox</span></a> -
+                  creates a checkbox
+                </li>
+                <li>
+                  <a href="#color"><span class="item">color</span> </a>- creates
+                  a color picker
+                </li>
+                <li>
+                  <a href="#date"><span class="item">date</span> </a>- creates a
+                  date picker
+                </li>
+                <li>
+                  <a href="#datetime-local"
+                    ><span class="item">datetime-local</span> </a
+                  >- creates a date and time picker
+                </li>
+                <li>
+                  <a href="#email"><span class="item">email</span></a> - creates
+                  an input field that allows the user to input a valid email
+                  address
+                </li>
+                <li>
+                  <a href="#file"><span class="item">file</span></a> - creates
+                  an input field that lets the user upload a file or multiple
+                  files
+                </li>
+                <li>
+                  <a href="#image"> <span class="item">image</span> </a>-
+                  creates a button using an image
+                </li>
+
+                <li>
+                  <a href="#password"><span class="item">password</span></a> -
+                  creates an input field that lets the user enter information
+                  securely
+                </li>
+                <li>
+                  <a href="#radio"><span class="item">radio</span> </a> -
+                  creates a radio button
+                </li>
+                <li>
+                  <a href="#range"><span class="item">range</span> </a> -
+                  creates a range picker from which the user can select the
+                  value
+                </li>
+                <li>
+                  <a href="#reset"> <span class="item">reset</span></a> -
+                  creates the button which clears all the form values to their
+                  default value
+                </li>
+
+                <li>
+                  <a href="#submit"> <span class="item">submit</span> </a> -
+                  allows user to submit form to the server
+                </li>
+                <li>
+                  <a href="#tel"><span class="item">tel</span></a> - defines the
+                  field to enter a telephone number
+                </li>
+                <li>
+                  <a href="#time"><span class="item">time</span></a> - creates
+                  an input field that accepts time value
+                </li>
+                <li>
+                  <a href="#url"><span class="item">url </span></a> - lets the
+                  user enter and edit a URL
+                </li>
+              </ol>
+            </div>
+            <br />
+            <div class="contentTitle">Some Other Attributes</div>
+            <div class="contentText">
+              <li>
+                <span class="item">value:</span> specifies the intial value for
+                the control(type = "checkbox" or type = "radio")
+              </li>
+              <li>
+                <span class="item">placeholder:</span> specifies a short hint
+                that describes the expected value
+              </li>
+              <li>
+                <span class="item">required:</span> specifies that an input
+                field must be filled out before submitting the form
+              </li>
+              <li>
+                <span class="item">multiple:</span> allows users to choose more
+                than one value from selection
+              </li>
+              <li>
+                <span class="item">maxlength:</span> defines the maximum number
+                of characters allowed in a text field
+              </li>
+              <li>
+                <span class="item">accept:</span> specifies a comma-separated
+                list of content types that the server accepts
+              </li>
+              <li>
+                <span class="item">autocomplete:</span> specifies for enabling
+                or disabling of autocomplete in &lt;input &gt; element
+              </li>
+              <li>
+                <span class="item">checked:</span> if type = "radio" or type =
+                "checkbox" it will already be selected when the page loads
+              </li>
+              <li>
+                <span class="item">readonly:</span> sets the input control to
+                read-only. It won't allow the user to change the value
+              </li>
+              <li>
+                <span class="item">disabled:</span> disables the input control.
+                The button won't accept changes from the user
+              </li>
+              <li>
+                <span class="item">pattern:</span> specifies a regular
+                expression to check the input value against
+              </li>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="textArea" id="text">
+          <div class="textContent">
+            <div class="contentTitle">text</div>
+            <div class="contentText">
+              <p>
+                The input type text is used to create single-line text fields.
+                It is the default input type.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                   &lt;label for="name"&gt;Search: &lt;/label&gt;
+                   &lt;input type="text" id="name"&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="name">Search:</label>
+              <input type="text" id="name" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="button">
+          <div class="textContent">
+            <div class="contentTitle">button</div>
+            <div class="contentText">
+              <p>
+                The input type button is used to create a button with no default
+                functionality.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                   &lt;input type="button" value="Click Me!"&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input
+                type="button"
+                value="Click Me!"
+                style="font-size: larger; background-color: #ffffff"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="checkbox">
+          <div class="textContent">
+            <div class="contentTitle">checkbox</div>
+            <div class="contentText">
+              <p>The input type checkbox is used to create a checkbox input.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;input type="checkbox" id="subscribe" value="subscribe"&gt;
+                  &lt;label for="subscribe"&gt;Subscribe to channel!&lt;/label&gt;&lt;br&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input type="checkbox" id="subscribe" value="subscribe" />
+              <label for="subscribe">Subscribe to channel!</label><br />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="color">
+          <div class="textContent">
+            <div class="contentTitle">color</div>
+            <div class="contentText">
+              <p>
+                The input type color is used to create an input field that lets
+                the user pick a color.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;input type="color" id="background"&gt;
+                    &lt;label for="background"&gt;Background Color&lt;/label&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input type="color" id="background" />
+              <label for="background">Background Color</label>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="date">
+          <div class="textContent">
+            <div class="contentTitle">date</div>
+            <div class="contentText">
+              <p>
+                The input type date is used to create an input field that lets
+                the user input a date using the date picker interface from the
+                browser.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="birthday"&gt;Birthday:&lt;/label&gt;
+                  &lt;input type="date" id="birthday"&gt;  </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="datetime-local">
+          <div class="textContent">
+            <div class="contentTitle">datetime-local</div>
+            <div class="contentText">
+              <p>
+                The input type datetime-local is an HTML input type used for
+                date and time selection on web pages. It allows users to pick a
+                specific date and time value.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="meeting-time"&gt;Choose a time for your appointment:&lt;/label&gt;
+                  &lt;input type="datetime-local" id="meeting-time" &gt;
+                </pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="meeting-time"
+                >Choose a time for your appointment:</label
+              >
+              <input type="datetime-local" id="meeting-time" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="email">
+          <div class="textContent">
+            <div class="contentTitle">email</div>
+            <div class="contentText">
+              <p>
+                The input type email is used to create an input field that
+                allows the user to input a valid email address.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="email"&gt;Enter your email:&lt;/label&gt;
+                  &lt;input type="email" id="email"&gt;   </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="contentText">
+              <p>
+                This input field throws an error if the value provided is not a
+                valid email.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="file">
+          <div class="textContent">
+            <div class="contentTitle">file</div>
+            <div class="contentText">
+              <p>
+                The input type file is used to create an input field that lets
+                the user upload a file or multiple files from their device.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="file"&gt;Choose the file/files:&lt;/label&gt;
+                  &lt;input type="file" name="file" id="file"&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="file">Choose the file/files: </label>
+              <input type="file" name="file" id="file" />
+            </div>
+            <div class="contentText">
+              <p>
+                The accept attribute provides file limitation by specifying the
+                type of file that can be added. The following code only accepts
+                pdf files:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="file"&gt;Choose the file/files:&lt;/label&gt;
+                  &lt;input type="file" name="file" id="file" <span class="item">accept=".pdf"</span>&gt;</pre>
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="file">Choose the file/files: </label>
+              <input type="file" name="file" id="file" accept=".pdf" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="image">
+          <div class="textContent">
+            <div class="contentTitle">image</div>
+            <div class="contentText">
+              <p>
+                The input type image is used to create a button using an image.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;input type="image" src="/submit.png" alt="submit"&gt;  </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input
+                type="image"
+                src="images/submit_input_type.png"
+                alt="submit"
+                width="100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="password">
+          <div class="textContent">
+            <div class="contentTitle">password</div>
+            <div class="contentText">
+              <p>
+                The input type password is used to create an input field that
+                lets the user enter information securely.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="password"&gt;Password:&lt;/label&gt;
+                  &lt;input type="password" id="password"&gt;  </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="password">Password:</label>
+              <input type="password" id="password" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="radio">
+          <div class="textContent">
+            <div class="contentTitle">radio</div>
+            <div class="contentText">
+              <p>
+                The input type radio is used to define a radio button. Radio
+                buttons are defined in a group. Radio buttons let users pick one
+                option out of a group of options.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form&gt;
+                      &lt;input type="radio" id="male" name="gender" value="male"&gt;
+                      &lt;label for="male"&gt;male&lt;/label&gt;
+                      &lt;input type="radio" id="female" name="gender" value="female"&gt;
+                      &lt;label for="female"&gt;female&lt;/label&gt;
+                    &lt;/form&gt;
+                    </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <form>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">female</label>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="range">
+          <div class="textContent">
+            <div class="contentTitle">range</div>
+            <div class="contentText">
+              <p>
+                The input type range is used to create a range picker from which
+                the user can select the value. User can select a value from the
+                range given. It has a default range from 0 to 100.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;label for="range"&gt;Select value: &lt;/label&gt;
+                    &lt;input type="range" id="range" value="90"&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="range">Select value: </label>
+              <input type="range" id="range" value="90" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="reset">
+          <div class="textContent">
+            <div class="contentTitle">reset</div>
+            <div class="contentText">
+              <p>
+                The input type reset defines the button which clears all the
+                form values to their default value.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;form&gt;
+                      &lt;label for="name"&gt;Name:&lt;/label&gt;
+                      &lt;input id="name" type="text" /&gt;&lt;br /&gt;
+                      &lt;input type="reset" value="Reset" /&gt;
+                    &lt;/form&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <form>
+                <label for="name">Name:</label>
+                <input id="name" type="text" /><br />
+                <input type="reset" value="Reset" style="font-size: medium" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="submit">
+          <div class="textContent">
+            <div class="contentTitle">submit</div>
+            <div class="contentText">
+              <p>
+                The input type submit is used when the user submits the form to
+                the server. It is rendered as a button.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;input type="submit" value="submit"&gt;  </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input type="submit" value="submit" style="font-size: large" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="tel">
+          <div class="textContent">
+            <div class="contentTitle">tel</div>
+            <div class="contentText">
+              <p>
+                The input type tel is used to define the field to enter a
+                telephone number.
+              </p>
+              <p>
+                The telephone number is not automatically validated to a
+                particular format as telephone formats differ across the world.
+                It has an attribute named
+                <span class="item">pattern </span> used to validate the entered
+                value.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  &lt;label for="phone"&gt;Phone Number:&lt;/label&gt;
+                  &lt;input
+                    type="tel"
+                    id="phone"
+                    placeholder="0555-555-5555"
+                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"/&gt;</pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="0555-555-5555"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="time">
+          <div class="textContent">
+            <div class="contentTitle">time</div>
+            <div class="contentText">
+              <p>
+                The input type time attribute creates an input field that
+                accepts time value.
+              </p>
+              <p>
+                It allows users to add time in hours, minutes, and seconds
+                easily.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;label for="time"&gt;Select Time:&lt;/label&gt;
+                    &lt;input type="time" id="time" /&gt;  </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <label for="time">Select Time:</label>
+              <input type="time" id="time" />
+            </div>
+          </div>
+        </div>
+        <div class="textArea" id="url">
+          <div class="textContent">
+            <div class="contentTitle">url</div>
+            <div class="contentText">
+              <p>
+                The input type url is used to let the user enter and edit a URL.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    &lt;label for="url">URL:&lt;/label&gt;
+                    &lt;input
+                      type="url"
+                      id="url"
+                      placeholder="https://example.com"
+                      pattern="https://.*" /&gt; </pre
+                >
+              </div>
+            </div>
+            <div class="codeArea extraDiv">
+              <p>Output:</p>
+              <input
+                type="url"
+                id="url"
+                placeholder="https://example.com"
+                pattern="https://.*"
+              />
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
