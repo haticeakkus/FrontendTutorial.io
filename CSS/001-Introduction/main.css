@@ -1,0 +1,37 @@
+.classBox{
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    height: 150px;
+    background-color: var(--primaryBoxColor);
+    border-radius: 8px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+#p1{
+    font-size: 2rem;
+}
+.bgColor{
+    background-color: var(--primaryBoxColor);
+}
+.borderRadius{
+    background-color: var(--secondaryBoxColor);
+    border-radius: 8px;
+}
+.etc{
+    font-weight: 600;
+    text-shadow: 1px 1px 1px whitesmoke;
+    font-size: xx-large;
+}
+.codeImage{
+    margin: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+
