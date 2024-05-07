@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Selectors</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Universal Selector: *</div>
+            <div class="contentText">
+              <p>
+                This selector affects every element on the html. That is because
+                it is called 'universal'.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                The code above is a general thing that must be done. The default
+                value of these properties causes collapse after we set our own
+                value.
+                <span class="item"
+                  >So, at the beginning of every project, the code above must be
+                  declared.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">General Selectors</div>
+            <div class="contentText">
+              <p>
+                Elements can be selected with their tag names. However, this
+                method will affect all the elements in question.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    body{
+                      font-family: Arial, sans-serif;
+                    }
+                    p{
+                      color: black;
+                    }
+                    div{
+                      width: 400px;
+                      height: 500px;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                According to the code above, all the text's font family will be
+                set as arial in the body element. All the p element's text color
+                will be black. Also, every div in the web page will have 400px
+                width and 500px height. This kind of selectors do not select the
+                elements <span class="item">specifially</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Class and ID Selector</div>
+            <div class="contentText">
+              <p>
+                In CSS, <span class="item">classes</span> are being selected
+                with a dot in the beginning of the class name.
+              </p>
+              <p>
+                Similarly, # is being used to select
+                <span class="item">IDs</span>.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;div class="box classBox"&gt;"classBox" div&lt;/div&gt;
+                  <span class="item">CSS</span>
+                  .classBox{
+                    width: 150px;
+                    height: 150px;
+                    background-color: #003554;
+                  }</pre>
+              </div>
+            </div>
+            <div class="box classBox">"classBox" div</div>
+            <br />
+            <br />
+            <div class="contentTitle">
+              <span class="item">Wrong Way Of ID Usage</span>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;div <span class="item">id="box idBox"</span>&gt;Div with multiple IDs&lt;/div&gt;
+                  <span class="item">CSS</span>
+                  #idBox{
+                    width: 80%;
+                    height: 150px;
+                    background-color: #003554;
+                  }</pre>
+              </div>
+            </div>
+            <div id="box idBox">
+              This is the div styled in the code above. As you can see nothing
+              changed.
+            </div>
+            <br /><br />
+            <div class="contentTitle">
+              <span class="item">Proper Way Of ID Usage</span>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;div <span class="item">id="idBox"</span>&gt;This is a div affected by a properly used ID.&lt;/div&gt;
+                  <span class="item">CSS</span>
+                  #idBox{
+                    width: 80%;
+                    height: 150px;
+                    background-color: #003554;
+                  }</pre>
+              </div>
+            </div>
+            <div id="idBox">This is a div affected by a properly used ID.</div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              Be careful while using ID. It MUST be unique. If an element is
+              being forced to have multiple IDs, none of the IDs are going to
+              implement as seen in the examples above.
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Descendant Selector</div>
+            <div class="contentText">
+              <p>Selecting process may be done more specifically.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;div class="box ancestorDiv"&gt;
+                    &lt;p&gtThis is a p element in the ancestor div.&lt;/p&gt
+                    &lt;div class="box childDiv"&gt
+                      &lt;p&gtThis is a p element in the child div.&lt;/p&gt
+                    &lt;/div&gt
+                  &lt;/div&gt
+                  <span class="item">CSS</span>
+                  .ancestorDiv{
+                    margin: 0 auto;
+                    background-color: #7364d273;
+                    width: 100%;
+                    height: 150px;
+                    text-align: center;
+                  }
+                  .childDiv{
+                    margin: 10px auto;
+                    background-color: #858ae3b6;
+                    width: 70%;
+                    height: 75px;
+                    text-align: center;
+                  }
+                  .ancestorDiv p{
+                    color:darkgoldenrod;
+                  }
+                  .ancestorDiv .childDiv p{
+                    color:floralwhite
+                  }</pre>
+              </div>
+            </div>
+            <div class="box ancestorDiv">
+              <p>This is a p element in the ancestor div.</p>
+              <div class="box childDiv">
+                <p>This is a p element in the child div.</p>
+              </div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Pay attention to the boxes and the codes above. Normally, all
+                the paragraphs in the ancestor div must be darkgoldenrod.
+                However, the paragraph inside of the child div is floralwhite
+                while the other paragraph is darkgoldenrod.
+                <span class="item"
+                  >This is because the second row of the code is a more specific
+                  selector.</span
+                >
+                As a result, it overwrote the first code.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Attribute Selector</div>
+            <div class="contentText">
+              <p>Attribues can also be selected.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;a target="_blank" href="https://www.aybubiltek.com/"&gt;
+                  Link with _blank&lt;/a&gt;
+                  &lt;br /&gt;
+                  &lt;a href="https://www.aybubiltek.com/"&gt;Normal Link&lt;/a&gt;
+                  <span class="item">CSS</span>
+                  a[target="_blank"] {
+                    color: #7364d273;
+                  }</pre>
+              </div>
+            </div>
+            <a target="_blank" href="https://www.aybubiltek.com/"
+              >Link with _blank</a
+            >
+            <br />
+            <a href="https://www.aybubiltek.com/">Normal Link</a>
+            <br />
+            <br />
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                First link has a _blank attribute but second one does not.
+                <span class="item"
+                  >Selector affected the link which has _blank attribute.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Pseudo -Classes and Pseudo-Elements</div>
+            <div class="contentText">
+              <p>
+                These structures are also declared in the CSS file with a
+                selector method.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;div class="box pseudoBox"&gt;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                    eligendi necessitatibus officiis quam excepturi est!
+                  &lt;/div&gt;
+                  <span class="item">CSS</span>
+                  .pseudoBox{
+                    background-color: var(--primaryBoxColor);
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 250px;
+                    height: 80px;
+                    padding: 12px;
+                  }
+                  .pseudoBox:hover{
+                    background-color: var(--secondaryBoxColor);
+                  }
+                  .pseudoBox::first-line{
+                    color: sandybrown;
+                  }</pre>
+              </div>
+            </div>
+            <div class="box pseudoBox">
+              Hover this box to see what is changing! Awesome, right!
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Grouping Selectors</div>
+            <div class="contentText">
+              <p>
+                It is possible to create multiple selectors with the method
+                below.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  h1, h2, h3{
+                    color: #858ae3b6;;
+                  }</pre
+                >
+              </div>
+            </div>
+            <br />
+            <h1>A sentence with h1 tag.</h1>
+            <h2>A sentence with h2 tag.</h2>
+            <h3>A sentence with h3 tag.</h3>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Specificity</div>
+            <div class="contentText">
+              <p>
+                Every selector has specificity. The selector which has greater
+                value of specificity overwrites the selector that has lower
+                specificity.
+              </p>
+              <p>Here are the specificity values of the structures in order:</p>
+            </div>
+            <br />
+            <div class="specificity contentText">
+              <p><span class="item">Inline Styles:</span> 1000</p>
+              <p><span class="item">IDs:</span> 100</p>
+              <p>
+                <span class="item"
+                  >Classes, Pseudo-Classes,Attribute Selectors:</span
+                >
+                10
+              </p>
+              <p><span class="item">Elements, Pseudo-Elements:</span> 1</p>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Inline styles means the style which is done in the element tag
+                in HTML.
+              </p>
+              <p>
+                <span class="item"
+                  >To calculate specificity: Start at 0, add the values above
+                  when you see in the selector structure. If they are in a
+                  group, add all the values of the structures(inline styles,
+                  classes, etc.).</span
+                >
+              </p>
+            </div>
+            <br />
+            <div class="contentTitle">Final Footnote</div>
+            <div class="contentText">
+              <p>
+                Go to CSS file and hover the selectors to see specificity
+                values.
+              </p>
+              <p>
+                Also
+                <a
+                  id="exactLink"
+                  target="_blank"
+                  href="https://specificity.keegan.st/"
+                  >Specificity Calculator</a
+                >
+                is useful to understand specificity clearly.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br>
+  </body>
+</html>

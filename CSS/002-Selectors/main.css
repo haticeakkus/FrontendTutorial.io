@@ -1,0 +1,101 @@
+.examples{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Universal Selector */
+/* This selector affects every element on the html. That is because it is called 'universal'. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.classBox{
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: var(--primaryBoxColor);
+}
+#idBox{
+    margin: 20px auto;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 80%;
+    height: 150px;
+    background-color: var(--primaryBoxColor);
+    border-radius: 10px;
+}
+.ancestorDiv{
+    margin: 20px auto;
+    background-color: var(--primaryBoxColor);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.childDiv{
+    margin: 10px auto;
+    background-color: var(--secondaryBoxColor);
+    width: 70%;
+    height: 75px;
+    text-align: center;
+}
+.ancestorDiv p{
+    color:darkgoldenrod;
+}
+.ancestorDiv .childDiv p{
+    color:floralwhite
+}
+.bigAncestor{
+    text-align: center;
+    width: 100%;
+    height: 180px;
+    background-color: var(--primaryBoxColor);
+}
+.ancestor{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ancestor>div{
+    display: grid;
+    place-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondaryBoxColor);
+    border-radius: 8px;
+}
+a[target="_blank"]{
+    color: #7364d273;
+}
+.pseudoBox{
+    background-color: var(--primaryBoxColor);
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+    height: 80px;
+    padding: 12px;
+}
+.pseudoBox:hover{
+    background-color: var(--secondaryBoxColor);
+}
+.pseudoBox::first-line{
+    color: sandybrown;
+}
+h1, h2, h3{
+    text-align: center;
+    color: var(--secondaryBoxColor);
+}
+.specificity{
+    text-align: center;
+    font-weight: 600;
+}
+.box{
+    border-radius: 8px;
+}
