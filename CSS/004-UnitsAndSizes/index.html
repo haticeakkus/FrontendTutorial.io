@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units And Sizes</title>
+    <link rel="stylesheet" href="../../template/style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="../../template/img/icons/iconCSS.png" />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="">
+      <img src="../../template/img/vectors/Vector 14.png" alt="">
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Units & Sizes</div>
+        <img class="vector2" src="../../template/img/vectors/Vector 16.png" alt="" />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Absolute And Relative Length Units</div>
+            <div class="contentText">Many CSS properties like width, margin, padding,  and font-size take a length, and CSS has many different ways to express length. There are two general kinds of units used for length and size in CSS: absolute and relative.</div>
+            <br>
+            <!-- || px || -->
+            <div class="contentText"><p> <span class="item"> px </span>: Pixels are one of the most common length units in CSS. The px unit is absolute. 1px is equal to a single point (“dot”). <i> For example: paragraph will take up 400px pixels in width and font size will be 24px.</i></p></div>
+            <div class="codeArea"> 
+             <div class="codeContent">
+                <pre>
+                  p{
+                    font-size: 24px;
+                    width: 400px;
+                 }</pre>
+             </div> <!-- codeContent -->
+            </div> <!-- codearea -->
+
+            <!-- || em || -->
+            <div class="contentText"><p><span class="item">em </span>: The em unit is relative. This unit when used with the font-size property, em inherits the font-size from its <i>parent</i> element.</p></div>
+            <div class="contentText"><p><i>Example: p contents will be (20*0.5) 10px.</i></p></div>
+            <div class="codeArea"> 
+             <div class="codeContent">
+                <pre>
+                  .container {
+                    font-size: 20px;
+                  }
+
+                  .container p {
+                    font-size: 0.5em;
+                  }</pre>
+             </div> <!-- codeContent -->
+            </div> <!-- codearea -->
+            <!-- || rem || -->
+            <div class="contentText"><p><span class="item">rem </span>: The rem unit is relative to the font size of the root element. For websites, the root of the document is the html element.  (e.g <i>&lt;html&gt;</i> or <i> :root  {} </i>). In most browsers, the default font size is 16px. <i>In this case, p is (16*2) 32px.</i> </p></div>
+            <div class="codeArea"> 
+             <div class="codeContent">
+                <pre>
+                  p {
+                    font-size: 2rem;
+                  }</pre>
+             </div> <!-- codeContent -->
+            </div> <!-- codearea -->
+            <!-- || percentage || -->
+            <div class="contentText"><p><span class="item">% </span>: Percentages relative to the parent's size. <i>Such as</i></p></div>
+            <div class="codeArea"> 
+             <div class="codeContent">
+                <pre>
+                  .container {
+                    width: 400px;
+                  }
+                  
+                  .container p {
+                    width: 75%;
+                  }</pre>
+             </div> <!-- codeContent -->
+            </div> <!-- codearea -->
+
+            <!-- || view height and width || -->
+            <div class="contentText"><p><span class="item">vh and vw </span>: View height is 1% of the height of the viewport. View width is 1% of the width of the viewport. </p></div>
+            <div class="codeArea"> 
+             <div class="codeContent">
+                <pre>
+                  body {
+                    width: 100vw;
+                    height: 100vh;
+                  }</pre>
+             </div> <!-- codeContent -->
+            </div> <!-- codearea -->
+
+          </div> <!-- textcontent -->
+        </div> <!-- textarea --> <!-- çerçeve -->
+       <br><br>
+      </div> <!-- container -->
+    </main>
+    <br /><br /><br>
+  </body>
+</html>
+
