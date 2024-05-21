@@ -1,0 +1,108 @@
+/* Typography is the way that we change text' style, font and appearance */
+
+/* text-decoration: it changes the style of the text while the font is same. It can be used to insert line or color */
+/* color: sets the text color */
+/* text-transform: it transforms the letters into upper case, capitalized, or lower case as you wish */
+/* text-align: aligns the text in its parent */
+/* text-indent: creates an indent at the first row of the text */
+/* text-shadow: creates a shadow behind the text */
+/* letter-spacing: sets space between the letters */
+/* line-height: sets the space between the lines */
+/* word-spacing: sets the space between the words */
+/* font-size: sets the size of the text. It makes texts bigger */
+/* font-weight: sets the thickness of the text */
+/* font-style: sets the style of the texts as italic, oblique, normal etc. */
+/* font-family: changes the type(family) of the text */
+
+/*this part(until the content-box selector) is to organize my web page. You may overlook it*/
+.image-ss{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* You can see the usages and the examples below. You will see the appearances and differences when you run the code. */
+
+
+/* text-decoration */
+.underlined-p{
+    text-decoration: underline darkblue wavy 2px;
+}
+
+/* color */
+.colored-p{
+    color: tomato;
+}
+
+/* text-transform */
+.upper-cased-p{
+    text-transform: uppercase;
+}
+.lower-cased-p{
+    text-transform: lowercase;
+}
+.capitalized-p{
+    text-transform: capitalize;
+}
+
+/* text-align */
+.aligned-right-p{
+    text-align: right;
+}
+.aligned-left-p{
+    text-align: left;
+}
+.aligned-center-p{
+    text-align: center;
+}
+.justified-p{
+    text-align: justify;
+}
+
+/* text-indent, text-shadow */
+.indent-and-shadowed-p{
+    text-indent: 2em;
+    text-shadow: 2px 2px 4px whitesmoke;
+}
+
+/* letter-spacing, line-height, word-spacing*/
+.hybrid{
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    word-spacing: 1.5em;
+}
+
+/* font-size */
+.font-sized-p-1{
+    font-size: 1.5em;
+}
+.font-sized-p-2{
+    font-size: 2em;
+}
+
+/* font-weight */
+.font-weighted-p-1{
+    font-weight: 100;
+}
+.font-weighted-p-2{
+    font-weight: 700;
+}
+
+/* font-style */
+.font-style-p{
+    font-style: italic;
+}
+
+/* to add an external font family: go to "https://fonts.google.com/". Select one font family. Press @import button and copy the code that is seen. Paste it to the first line of the CSS.(I will paste here to make it clear) */
+/* I added the image to the font-family box in html to make it clear */
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Roboto:wght@100&display=swap');
+/* to use the new font family, copy the code below, too. And paste it after font-family typography */
+.external-font-family-p{
+    font-family: 'Cousine', monospace;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
