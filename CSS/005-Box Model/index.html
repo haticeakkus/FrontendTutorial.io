@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Box Model</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Understanding The Spaces One By One</div>
+            <!-- There are several properties of the elements(explained on the css file). You will see the colors when you run the code -->
+            <!-- content(blue area): our exact element. image, text, heading etc. -->
+            <!-- padding(green area): space around our element, but, inside of element's borders -->
+            <!-- border:  the line that circle around the element -->
+            <!-- margin(orange area): space around our element, but, outside of element's borders  -->
+            <div class="contentText">
+              You can reach the screen below by pressing CTRL+SHIFT+I.
+            </div>
+            <div class="imageDiv">
+              <img
+                class="image-ss"
+                src="box-model-web.png"
+                alt="a screenshot"
+              />
+            </div>
+            <div class="contentText">
+              <p>
+                <span class="item">Content(Blue Area):</span> Our exact element.
+                image, text, heading etc.
+              </p>
+              <p>
+                <span class="item">Padding(Green Area):</span> Space around our
+                element, but, inside of element's borders.
+              </p>
+              <p>
+                <span class="item">Border: </span>The line that circle around
+                the element.
+              </p>
+              <p>
+                <span class="item">Margin(Orange Area):</span> space around our
+                element, but, outside of element's borders.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">box-sizing Property</div>
+            <div class="contentText">
+              <p>
+                box-sizing is a property that inform the website of how to
+                calculate our elements' side lengths and have to values:
+              </p>
+              <p>
+                <span class="item">border-box</span> value allows website to
+                consider the padding and border when the website calculates the
+                length of an element.
+              </p>
+              <p>
+                However, with <span class="item">content-box</span>, only
+                content's itself are being calculated.
+              </p>
+              <br />
+              <div class="contentTitle">
+                To make it clear, here is an example:
+              </div>
+              <div class="codeArea">
+                <div class="codeContent">
+                  <pre>
+                    .content-box{
+                      box-sizing: content-box;
+                      margin: 5px auto;
+                      padding: 50px; 
+                      border-radius: 40px; 
+                      border: 1px white solid;
+                      width: 250px;
+                    }
+                    .border-box{
+                      box-sizing: border-box;
+                      margin: 5px auto;
+                      padding: 50px;
+                      border-radius: 40px; 
+                      border: 1px white solid;
+                      width: 250px;
+                    }</pre
+                  >
+                </div>
+              </div>
+              <div class="content-box">
+                <p>This is a box with 'content-box' sizing.</p>
+              </div>
+              <br />
+              <div class="border-box">
+                <p>This is a box with 'border-box' sizing.</p>
+              </div>
+              <br />
+              <div class="contentText">
+                <p>
+                  As you can see in the box above, both boxes have 250px width.
+                  However, content-box is much more bigger because it calculates
+                  just the content as 250px, and there are also padding and
+                  border outside of it. To create easy to organise web pages,
+                  box-sizing is more effective.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Usages</div>
+            <div class="contentText">
+              <p>
+                I recommend you to press CTRL+SHIFT+I and examine the test box
+                part. Every side of this box has another value.
+              </p>
+            </div>
+          </div>
+          <div class="test">This is a test box for usages</div>
+        </div>
+        <br /><br /><br>
+      </div>
+      
+    </main>
+    <br /><br /><br>
+  </body>
+</html>

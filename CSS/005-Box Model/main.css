@@ -1,0 +1,75 @@
+/* THINGS MUST BE DECLARED IN * SELECTOR */
+/* margin and padding have their default values. After we set a margin and padding value, final outcome will be an average number instead of as we wanted. To prevent this from happening, in CSS file, we must set margin and padding as '0' with * selector */
+/* we also should set box-sizing as 'border-box'. This value allows us to include padding and border in an element's total lengths. Its default value 'content-box' does not include padding and border length in total length */
+
+/* MARGIN AND PADDING USAGE */
+    /* if there are four numbers*/
+    /* margin or padding: top right bottom left; */
+    
+    /* if there are two numbers */
+    /* margin or padding: top-and-bottom right-and-left; */
+
+    /* if there are three numbers */
+    /* margin or padding: top right-and-left bottom; */
+
+    /* if you see 'auto' word, know it aligns content to center */
+    /* margin: 5px auto (this row aligns the content to center relative to the y axis )*/
+
+/* BORDER AND OUTLINE USAGE */
+
+    /* border: px border-style color */
+    /* creates a border around the element*/
+
+    /* border-radius: px*/
+    /* rounds the corners */
+
+    /* outline: px border-style color */
+    /* creates another border outside of the border*/
+
+    /* outline-offset: px */
+    /* outline-offset: pushes the outline out or in depending on the entered number is positive or negative */
+
+
+
+/*this part(until the content-box selector) is to organize my web page. You may overlook it*/
+.image-ss{
+    margin: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    width: 90%;
+    border-radius: 8px;
+}
+
+
+
+
+.content-box{
+    box-sizing: content-box;
+    margin: 5px auto;
+    padding: 50px; 
+    border-radius: 40px; 
+    border: 1px white solid;
+    width: 250px;
+}
+.border-box{
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 50px;
+    border-radius: 40px; 
+    border: 1px white solid;
+    width: 250px;
+}
+
+
+
+/* explanations are at the beginning */
+.test{
+    border: 2px solid tomato;
+    border-top-style: dotted;
+    border-top-color: blue;
+    margin: 50px 100px;
+    padding: 200px 100px 50px;
+    border-radius: 20px;
+}
