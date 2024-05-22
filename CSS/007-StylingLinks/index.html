@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Links</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/jpg" href="../../template/img/icons/iconCSS.png" />
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <!-- <img src="../../template/img/Vector 14.png" alt="" /> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Styling Links</div>
+        <img class="vector2" src="../../template/img/vectors/Vector 16.png" alt="" />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              Links can be styled with any CSS property, such as color,
+              font-family, font-size, and padding. Here is an easy example:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    a {
+                      color: hotpink;
+                    }</pre>
+              </div>
+            </div>
+            <div class="contentText">
+              In addition, links can be styled differently depending on what
+              state they are in.
+            </div>
+            <br />
+            <div class="contentText">
+              Links also have 4 states, and many programmers style each state
+              differently. The four states are:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    /* unvisited link */
+                    a:link {
+                      color: red;
+                    }
+
+                    /* visited link */
+                    a:visited {
+                      color: green;
+                    }
+
+                    /* mouse over link */
+                    a:hover {
+                      color: hotpink;
+                    }
+
+                    /* selected link */
+                    a:active {
+                      color: blue;
+                    }</pre>
+              </div>
+            </div>
+            <div class="listText">
+              <ul>
+                <li>
+                  <p>
+                    <element class="item">a:link: </element> an unvisited,
+                    unclicked link
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <element class="item">a:visited:</element> a visited,
+                    clicked link
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <element class="item">a:hover:</element> a link when the
+                    user’s mouse is over it
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <element class="item">a:active:</element> a link when it is
+                    clicked
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <div class="contentTitle">a:link</div>
+              <div class="contentText">
+                <p><a id="link1" href="#">a normal link</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br>
+      </div>
+    </main>
+    <br /><br /><br>
+  </body>
+</html>

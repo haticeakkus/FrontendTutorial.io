@@ -1,0 +1,48 @@
+/* ///////////////// */
+/* example area (queryArea ile aynı ) */
+.textArea .listText {
+  width: 90%;
+  border-radius: 40px;
+  border: 1px white solid;
+  margin: 50px auto 0px;
+  background-color: rgba(56, 38, 67, 0.5);
+}
+ul {
+  margin: 25px;
+  padding: 25px;
+}
+li {
+  padding-bottom: 1px;
+}
+mark {
+  background-color: #7c7791;
+}
+.listText p .item {
+  font-size: 16px;
+  color: burlywood;
+  font-weight: 650;
+}
+.box {
+  border: whitesmoke 2px dashed;
+  border-radius: 15px;
+  width: 250px;
+  height: 150px;
+  background-color: rgba(56, 38, 67, 0.5);
+  margin: 30px auto;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+.container a:link {
+  font-size: 22px;
+  color: aqua;
+}
+.container a:visited {
+  color: greenyellow;
+}
+.container a:hover {
+  color: hotpink;
+}
+.container a:active {
+  color: blue;
+}
