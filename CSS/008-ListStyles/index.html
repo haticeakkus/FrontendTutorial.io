@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Styles</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">List Styles</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">HTML Lists Recap</div>
+
+            <div class="contentText">
+              There are two main types of lists in HTML — Ordered and Unordered
+            </div>
+            <br />
+            <div class="contentText">
+              In Ordered lists( &lt;ol&gt;&lt;/ol&gt;), the order of the list
+              items is important. The items may appear in order by number, roman
+              numeral, alpha numeral, or another type of marker. The default
+              marker for ordered lists is a number (or decimal):
+            </div>
+            <br />
+            <div class="contentText">
+              In Unordered lists ( &lt;ul&gt;&lt;/ul&gt;), the order of the list
+              items does not matter. The items appear in bullet format. The
+              default marker for unordered lists is a round bullet point or
+              disc.
+            </div>
+            <br />
+            <div class="contentText">
+              Each list item within an ordered or unordered list is created with
+              the &lt;li &gt;&lt;/li&gt; tag.
+            </div>
+            <br />
+          </div>
+        </div>
+        <!-- Topic Title -->
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">List-Specific Styles</div>
+            <div class="contentText">
+              There are three common properties specific to styling lists:
+              list-style-type, list-style-position, and list-style-image. There
+              is also a shorthand property which includes all three.
+            </div>
+            <div class="contentText">
+              list-style-type The markers (or bullet points) that appear in
+              ordered and unordered lists can be styled in a variety of ways.
+              The CSS property for styling the marker type is list-style-type.
+              The default list-style-type value for an ordered list is decimal,
+              whereas the default for an unordered list is disc.
+            </div>
+            <div class="contentTitle">Ordered list example:</div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  /* css */
+                  ol {
+                  list-style-type: upper-roman;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentTitle">Unordered list example:</div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                /* css */
+                ul {
+                list-style-type: square;
+                }</pre
+                >
+              </div>
+            </div>
+            <div class="contentTitle">No marker example:</div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                 /* css */
+                 ul {
+                 list-style-type: none;
+                 }</pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">
+              Accepted values for the list-style-type property include:
+            </div>
+            <div class="listText">
+              <ul>
+                <h4>Unordered:</h4>
+                <li>
+                  <p>disc (default)</p>
+                </li>
+                <li>
+                  <p>circle</p>
+                </li>
+                <li>
+                  <p>square</p>
+                </li>
+              </ul>
+            </div>
+            <br />
+            <div class="listText">
+              <ul>
+                <h4>Ordered:</h4>
+                <li>
+                  <p>decimal (default)</p>
+                </li>
+                <li>
+                  <p>decimal-leading-zero</p>
+                </li>
+                <li>
+                  <p>lower-roman</p>
+                </li>
+                <li>
+                  <p>upper-roman</p>
+                </li>
+                <li>
+                  <p>lower-greek</p>
+                </li>
+                <li>
+                  <p>lower-latin</p>
+                </li>
+                <li>
+                  <p>upper-latin</p>
+                </li>
+                <li>
+                  <p>armenian</p>
+                </li>
+                <li>
+                  <p>georgian</p>
+                </li>
+                <li>
+                  <p>lower-alpha</p>
+                </li>
+                <li>
+                  <p>upper-alpha</p>
+                </li>
+              </ul>
+            </div>
+            <div class="listText">
+              <ul>
+                <h4>Other:</h4>
+                <li>
+                  <p>none</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br /><br />
+        </div>
+        <br /><br />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Unordered list example</div>
+            <div class="listText">
+              <ul>
+                <h5>disc</h5>
+                <li>
+                  <p>Lorem.</p>
+                </li>
+                <li>
+                  <p>Quibusdam?</p>
+                </li>
+              </ul>
+            </div>
+            <div class="listText">
+              <ul id="circle">
+                <h5>circle</h5>
+                <li>Lorem.</li>
+                <li>Modi?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Ordered list example</div>
+            <div class="listText">
+              <ol>
+                <h5>decimal</h5>
+                <li>
+                  <p>Lorem.</p>
+                </li>
+                <li>
+                  <p>Quibusdam?</p>
+                </li>
+              </ol>
+            </div>
+            <div class="listText">
+              <ol id="roman">
+                <h5>lower-roman</h5>
+                <li>Lorem.</li>
+                <li>Modi?</li>
+              </ol>
+            </div>
+            <div class="listText">
+              <ol id="armenian">
+                <h5>armenian</h5>
+                <li>Lorem.</li>
+                <li>Modi?</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Other list example</div>
+            <div class="listText">
+              <ul id="none">
+                <h5>none</h5>
+
+                <li>
+                  <p>Lorem.</p>
+                </li>
+                <li>
+                  <p>Quibusdam?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.textArea .listText {
+  width: 90%;
+  border-radius: 10px;
+  border: 1px white solid;
+  margin: 50px auto 0px;
+  background-color: rgba(56, 38, 67, 0.5);
+}
+
+ul {
+  margin: 25px;
+  padding: 25px;
+}
+ol {
+  margin: 25px;
+  padding: 25px;
+}
+
+li {
+  padding-bottom: 1px;
+}
+#circle {
+  list-style-type: circle;
+}
+#roman {
+  list-style-type: lower-roman;
+}
+#armenian {
+  list-style-type: armenian;
+}
+#none {
+  list-style-type: none;
+}
