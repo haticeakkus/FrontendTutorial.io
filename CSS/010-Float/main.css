@@ -1,0 +1,40 @@
+/* /////// */
+ul {
+  margin: 25px 25px 0;
+}
+
+li {
+  padding-bottom: 1px;
+}
+/* float Extra */
+.textArea .exampleArea {
+  width: 100%;
+  border: white solid 1px;
+  border-radius: 4px;
+  background-color: rgba(56, 38, 67, 0.5);
+  min-height: 100px;
+  padding: 35px 35px 25px;
+  margin: 30px auto;
+  line-height: 1.8em;
+}
+.exampleArea img {
+  margin: 25px 25px auto 0;
+  padding: 15px auto 0;
+
+  height: 35%;
+  width: 35%;
+}
+.exampleArea p {
+  margin-top: 2rem;
+  margin-bottom: 1.2em;
+  font-size: var(--contentTextFont);
+}
+#float1 {
+  float: left;
+}
+#float2 {
+  float: right;
+}
+#float3 {
+  float: none;
+}

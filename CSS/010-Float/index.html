@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Float</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">CSS Layout - float and clear</div>
+            <div class="contentText">
+              The CSS float property specifies how an element should float. The
+              CSS clear property specifies what elements can float beside the
+              cleared element and on which side.
+            </div>
+            <br />
+            <div class="contentTitle">The float Property</div>
+            <div class="contentText">
+              The CSS float property specifies how an element should float. The
+              CSS clear property specifies what elements can float beside the
+              cleared element and on which side.
+            </div>
+            <div class="contentText">
+              <ul>
+                <li>
+                  <p>
+                    <element class="item">left</element> - The element floats to
+                    the left of its container
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <element class="item">right</element> - The element floats
+                    to the right of its container
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <element class="item">none</element> - The element does not
+                    float (will be displayed just where it occurs in the text).
+                    This is default
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <element class="item">inherit</element> - The element
+                    inherits the float value of its parent
+                  </p>
+                </li>
+                <br />
+                <p>
+                  In its simplest use, the float property can be used to wrap
+                  text around images.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Example - float: left;</div>
+            <div class="contentText">
+              The following example specifies that an image should float to the
+              left in a text:
+            </div>
+            <br />
+            <div class="exampleArea">
+              <img src="pineapple.jpg" alt="" id="float1" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+                egestas odio, vitae scelerisque enim ligula venenatis dolor.
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+                facilisis sed ornare eu, lobortis in odio. Praesent convallis
+                urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+                dictum nisi, sed ullamcorper ipsum dignissim ac...
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  img {
+                    float: left;
+                  }</pre
+                >
+              </div>
+            </div>
+          </div>
+          <div class="textContent">
+            <div class="contentTitle">Example - float: right;</div>
+            <div class="contentText">
+              The following example specifies that an image should float to the
+              right in a text:
+            </div>
+            <br />
+            <div class="exampleArea">
+              <img src="pineapple.jpg" alt="" id="float2" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+                egestas odio, vitae scelerisque enim ligula venenatis dolor.
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+                facilisis sed ornare eu, lobortis in odio. Praesent convallis
+                urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+                dictum nisi, sed ullamcorper ipsum dignissim ac...
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  img {
+                    float: right;
+                  }</pre
+                >
+              </div>
+            </div>
+          </div>
+          <div class="textContent">
+            <div class="contentTitle">Example - No float</div>
+            <div class="contentText">
+              In the following example the image will be displayed just where it
+              occurs in the text (float: none;):
+            </div>
+            <br />
+            <div class="exampleArea">
+              <img src="pineapple.jpg" alt="" id="float3" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+                egestas odio, vitae scelerisque enim ligula venenatis dolor.
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+                facilisis sed ornare eu, lobortis in odio. Praesent convallis
+                urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+                dictum nisi, sed ullamcorper ipsum dignissim ac...
+              </p>
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  img {
+                    float: none;
+                  }</pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
