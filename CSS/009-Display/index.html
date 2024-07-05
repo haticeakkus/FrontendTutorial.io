@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png " alt="" />
+      <img src="../../template/img/vectors/Vector 2.png " alt="" />
+      <img src="../../template/img/vectors/Vector 3.png " alt="" />
+      <img src="../../template/img/vectors/Vector 8.png " alt="" />
+      <img src="../../template/img/vectors/Vector 14.png " alt="" />
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">display</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">The display Property</div>
+            <div class="contentText">
+              The display property specifies if/how an element is displayed.
+              <br />
+              Every HTML element has a default display value depending on what
+              type of element it is. The default display value for most elements
+              is block or inline.
+            </div>
+            <br />
+
+            <br />
+            <div class="contentTitle">Override The Default Display Value</div>
+            <div class="contentText">
+              As mentioned, every element has a default display value. However,
+              you can override this. Changing an inline element to a block
+              element, or vice versa, can be useful for making the page look a
+              specific way, and still follow the web standards. A common example
+              is making inline <code> &lt;li&gt;</code> elements for horizontal
+              menus:
+            </div>
+            <div class="box">
+              <img src="img/screenCut1.PNG" alt="a screenshoot" />
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  li {
+                    display: inline;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="box">
+              <img src="img/screenCut2.PNG" alt="a screenshoot" />
+            </div>
+
+            <div class="contentText">
+              The following example displays <code>&lt;a&gt;</code> elements as
+              block elements:
+            </div>
+            <div class="box">
+              <img src="img/screenCut3.PNG" alt="a screenshoot" />
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  a {
+                    display: block;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="box">
+              <img src="img/screenCut4.PNG" alt="a screenshoot" />
+            </div>
+          </div>
+        </div>
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">
+              Hide an Element - display:none or visibility:hidden?
+            </div>
+            <!-- / -->
+            <br />
+
+            <br />
+
+            <div class="contentText">
+              Hiding an element can be done by setting the display property to
+              none. The element will be hidden, and the page will be displayed
+              as if the element is not there:
+            </div>
+            <div class="box">
+              <img src="img/screenCut5.PNG" alt="a screenshoot" />
+            </div>
+
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  h1.hidden {
+                    display: none;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="box">
+              <img src="img/screenCut6.PNG" alt="a screenshoot" />
+            </div>
+
+            <div class="contentText">
+              visibility:hidden; also hides an element. <br />
+
+              However, the element will still take up the same space as before.
+              The element will be hidden, but still affect the layout:
+            </div>
+            <div class="box">
+              <img src="img/screenCut5.PNG" alt="a screenshoot" />
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  h1.hidden {
+                    visibility: hidden;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="box">
+              <img src="img/screenCut7.PNG" alt="a screenshoot" />
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
