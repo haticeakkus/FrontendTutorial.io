@@ -1,0 +1,69 @@
+/* COLUMNS AND ITS PROPERTIES */
+/* column-count: Aligns the elements side by side. */
+/* column-width: Sets the width of every column. */
+/* column-rule: Creates a line between the columns. */
+/* Deleting The Margin: If you pay attention to the column examples on the web page, you can see the first row of the column is empty. This is because of the first paragraph's margin. To prevent this from happening, we must delete upper margin.(Check the code in the CSS file which has .deleting-margin selector) */
+/* If you change the size of the web page, you can see the space belong to 'topic' is seperated and involved to another column. break-inside property must be used with 'avoid' value to prevent this situation. */
+/* column-span: Creates a text which seperate the columns like a heading. */
+/* white-space: 'nowrap' value of this property allows us to make elements a whole. As a result, our element cannot be break into row below. */
+
+/*this part(until the content-box selector) is to organize my web page. You may overlook it*/
+.column-space{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* column-count, column-width */
+.columns1{
+    column-count: 3;
+}
+.columns2{
+    /*column-count: 3;
+    column-width: 300px;*/
+    /* This properties also can be used like the code below */
+    columns: 3 200px;
+}
+
+/* column-rule */
+.columns3{
+    columns: 4 250px;
+    column-rule: 2px solid var(--primaryBoxColor);
+}
+
+/* deleting the margin*/
+.deleting-margin{
+    columns: 4 250px;
+}
+.deleting-margin p{
+    margin-top: 1rem;
+}
+
+
+/* break-inside usage */
+.column4{
+    columns: 4 250px;
+    /* I made a comment the code below to make possible that you can see the collapse on red area. When this code will be activated, collapse will be fixed. */
+}
+h4{
+    background-color: tomato;
+    font-size: larger;
+    height: 100px;
+    /* I made a comment the code below to make possible that you can see the collapse on red area. When this code will be activated, collapse will be fixed. */
+    /* break-inside: avoid; */
+}
+
+/* column-span, white-space */
+.column5{
+    columns: 3 200px;  
+    margin-bottom: 30px; 
+}
+.heading-h{
+    color: tomato;
+    column-span: all;
+    text-align: center;
+    background-color: #211e2d;
+}
+.spanned{
+    white-space: nowrap;
+}

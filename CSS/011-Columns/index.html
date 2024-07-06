@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Columns And Its Properties</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Columns And Its Properties</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">column-count, column-width</div>
+            <div class="contentText">
+              <p>
+                <span class="item">column-count:</span> Aligns the elements side
+                by side.
+              </p>
+              <p>
+                <span class="item">column-width:</span> Sets the width of every
+                column.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .columns1{
+                        column-count: 3;
+                    }
+                    .columns2{
+                        column-count: 3;
+                        column-width: 300px;
+
+                        /*This properties also can be used like the code below*/
+
+                        columns: 3 200px;
+                    }</pre
+                >
+              </div>
+            </div>
+            <section class="columns1">
+              <div class="contentText">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatem maiores assumenda quaerat sed molestiae, facilis id
+                  et facere inventore accusamus?
+                </p>
+                <p>
+                  Ut id tenetur accusantium iste deleniti facere omnis minus
+                  facilis vitae nostrum odit, dolorem asperiores molestiae
+                  mollitia cumque! Earum, illum!
+                </p>
+                <p>
+                  Mollitia cum facilis vel. Inventore voluptate quis veritatis!
+                  Facilis laboriosam amet deserunt maxime quia soluta, dolores
+                  sint aut repellendus esse.
+                </p>
+                <p>
+                  A neque quos doloribus deserunt dolorem tempora, magni maxime
+                  quo harum deleniti adipisci porro explicabo nostrum quia?
+                  Iste, expedita quod!
+                </p>
+              </div>
+            </section>
+            <img
+              class="column-space"
+              src="../../template/img/vectors/Vector 16.png"
+              alt=""
+            />
+            <section class="columns2">
+              <div class="contentText">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatem maiores assumenda quaerat sed molestiae, facilis id
+                  et facere inventore accusamus?
+                </p>
+                <p>
+                  Ut id tenetur accusantium iste deleniti facere omnis minus
+                  facilis vitae nostrum odit, dolorem asperiores molestiae
+                  mollitia cumque! Earum, illum!
+                </p>
+                <p>
+                  Mollitia cum facilis vel. Inventore voluptate quis veritatis!
+                  Facilis laboriosam amet deserunt maxime quia soluta, dolores
+                  sint aut repellendus esse.
+                </p>
+                <p>
+                  A neque quos doloribus deserunt dolorem tempora, magni maxime
+                  quo harum deleniti adipisci porro explicabo nostrum quia?
+                  Iste, expedita quod!
+                </p>
+              </div>
+            </section>
+            <br />
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Change the width of the web page with your mouse. You can see
+                the function of the column-width.
+                <span class="item"
+                  >The second part has a column-width as you can see in the code
+                  area. Number of columns are decreased when you shorten the web
+                  page. Because length of a column cannot be smaller than
+                  column-width property. But first part is always has 3 columns
+                  regardless of the width.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">column-rule</div>
+            <div class="contentText">
+              <p>Creates a vertical line between the columns.</p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .columns3{
+                        columns: 4 250px;
+                        column-rule: 2px solid var(--primaryBoxColor);
+                    }</pre
+                >
+              </div>
+            </div>
+            <section class="columns3">
+              <div class="contentText">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatem maiores assumenda quaerat sed molestiae, facilis id
+                  et facere inventore accusamus?
+                </p>
+                <p>
+                  Ut id tenetur accusantium iste deleniti facere omnis minus
+                  facilis vitae nostrum odit, dolorem asperiores molestiae
+                  mollitia cumque! Earum, illum!
+                </p>
+                <p>
+                  Mollitia cum facilis vel. Inventore voluptate quis veritatis!
+                  Facilis laboriosam amet deserunt maxime quia soluta, dolores
+                  sint aut repellendus esse.
+                </p>
+                <p>
+                  A neque quos doloribus deserunt dolorem tempora, magni maxime
+                  quo harum deleniti adipisci porro explicabo nostrum quia?
+                  Iste, expedita quod!
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Deleting The First Margin</div>
+            <div class="contentText">
+              <p>
+                If you pay attention to the first row of the example, you can
+                see it is empty. This is because of the first paragraph's
+                margin. To prevent this from happening, we must delete upper
+                margin.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .deleting-margin{
+                        columns: 3 200px;
+                    }
+                    .deleting-margin p{
+                        margin-top: 1rem;
+                    }</pre
+                >
+              </div>
+            </div>
+            <section class="deleting-margin">
+              <div class="contentText">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatem maiores assumenda quaerat sed molestiae, facilis id
+                  et facere inventore accusamus?
+                </p>
+                <p>
+                  Ut id tenetur accusantium iste deleniti facere omnis minus
+                  facilis vitae nostrum odit, dolorem asperiores molestiae
+                  mollitia cumque! Earum, illum!
+                </p>
+                <p>
+                  Mollitia cum facilis vel. Inventore voluptate quis veritatis!
+                  Facilis laboriosam amet deserunt maxime quia soluta, dolores
+                  sint aut repellendus esse.
+                </p>
+                <p>
+                  A neque quos doloribus deserunt dolorem tempora, magni maxime
+                  quo harum deleniti adipisci porro explicabo nostrum quia?
+                  Iste, expedita quod!
+                </p>
+              </div>
+            </section>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                <span class="item"
+                  >We cannot see gaps in the first row on the other examples.
+                  This is because in this web page, margin and padding values
+                  are valued as 0. 1rem means it is the original root value. The
+                  example above is the natural reaction of a web page when you
+                  add columns.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">break-inside</div>
+            <div class="contentText">
+              <p>
+                If you change the size of the web page, you can see the space
+                belong to 'topic' is seperated and involved to another column.
+                break-inside property must be used on that 'involved' element
+                with 'avoid' value to prevent this situation.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .column4{
+                        columns: 4 250px;
+                        break-inside: avoid;
+                    }
+                    h4{
+                        background-color: tomato;
+                        font-size: larger;
+                        height: 100px;
+                        break-inside: avoid;
+                    }</pre
+                >
+              </div>
+            </div>
+            <section class="column4">
+              <div class="contentText">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatem maiores assumenda quaerat sed molestiae, facilis id
+                  et facere inventore accusamus?
+                </p>
+                <h4>topic</h4>
+                <p>
+                  Ut id tenetur accusantium iste deleniti facere omnis minus
+                  facilis vitae nostrum odit, dolorem asperiores molestiae
+                  mollitia cumque! Earum, illum!
+                </p>
+                <p>
+                  Mollitia cum facilis vel. Inventore voluptate quis veritatis!
+                  Facilis laboriosam amet deserunt maxime quia soluta, dolores
+                  sint aut repellendus esse.
+                </p>
+                <p>
+                  A neque quos doloribus deserunt dolorem tempora, magni maxime
+                  quo harum deleniti adipisci porro explicabo nostrum quia?
+                  Iste, expedita quod!
+                </p>
+              </div>
+            </section>
+            <br />
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Change the width of the page with your mouse. Examine the
+                collapse of the red area.
+              </p>
+              <p>
+                I made a comment the 'break-inside: avoid' code to make possible
+                that you can see the collapse above.
+                <span class="item"
+                  >When you go to the CSS file and activate the code</span
+                >, collapse will be fixed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">column-span, white-space</div>
+            <div class="contentText">
+              <p>
+                <span class="item">column-span:</span> Creates a text which
+                seperate the columns like a heading.
+              </p>
+              <p>
+                <span class="item">white-space:</span> 'nowrap' value of this
+                property allows us to make elements whole. As a result, our
+                element cannot be break into row below.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .heading-h{
+                        color: tomato;
+                        column-span: all;
+                        text-align: center;
+                        background-color: #211e2d;
+                    }
+                    .spanned{
+                        white-space: nowrap;
+                    }</pre
+                >
+              </div>
+            </div>
+            <section class="column5">
+              <div class="contentText">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatem maiores assumenda quaerat sed molestiae, facilis id
+                  et facere inventore accusamus?
+                </p>
+                <h3 class="heading-h">
+                  This is not the spanned area.
+                  <span class="spanned">This is the spanned area.</span>
+                </h3>
+                <p>
+                  Ut id tenetur accusantium iste deleniti facere omnis minus
+                  facilis vitae nostrum odit, dolorem asperiores molestiae
+                  mollitia cumque! Earum, illum!
+                </p>
+                <p>
+                  Mollitia cum facilis vel. Inventore voluptate quis veritatis!
+                  Facilis laboriosam amet deserunt maxime quia soluta, dolores
+                  sint aut repellendus esse.
+                </p>
+                <p>
+                  A neque quos doloribus deserunt dolorem tempora, magni maxime
+                  quo harum deleniti adipisci porro explicabo nostrum quia?
+                  Iste, expedita quod!
+                </p>
+              </div>
+            </section>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Change the width of the web page. You will see the spanned are
+                will not be separated.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
