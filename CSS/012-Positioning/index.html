@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Positioning</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="extraText">(static, relative, absolute, fixed, sticky)</div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">static</div>
+            <div class="contentText">
+              Default value of every element. Elements which is static, cannot
+              be affected by top, left, right or bottom properties.
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">relative</div>
+            <div class="contentText">
+              <p>
+                An element with 'relative' value is positioned relative to its
+                exact position.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .relative-box:hover{
+                    background-color: var(--secondaryBoxColor);
+                    position: relative;
+                    top: 50px;
+                    left: 50px;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="example-relative">
+              Hover The Box Below
+              <div class="box relative-box">Relative Box</div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Setting position with relative, adjusts the element away from
+                its exact position. In this example, box is 50px away from its
+                exact position.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">absolute</div>
+            <div class="contentText">
+              <p>
+                An element with 'absolute' value is positioned relative to the
+                body element and also do not take place on the web page.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .absolute-box{
+                    position: absolute;
+                    right: 50px;
+                  }
+                  .example-absolute:hover{
+                    .absolute-box{
+                        background-color: var(--secondaryBoxColor);
+                    }
+                    position: relative;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="example-absolute">
+              <div class="box absolute-box">Absolute Box</div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                The dashed box above has a default position value(static) before
+                you hover it. In this situation, absolute box adjust the
+                position relative to the body.
+              </p>
+              <p>
+                <span class="item"
+                  >However, when you hover the dashed box, it sets its position
+                  value as 'relative'. If you want to position an element
+                  relative to its ancestor, that element's ancestor must be set
+                  as 'relative'.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">sticky</div>
+            <div class="contentText">
+              <p>
+                An element with 'sticky' value "sticks" to screen as you coded
+                to be, and stays at the viewport when website is scrolled.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .sticky-box{
+                    background-color: var(--primaryBoxColor);
+                    position: sticky;
+                    top: 0px;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="example-sticky">
+              <div class="box sticky-box">Sticky box</div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                If you see this text, you have already understood what sticky
+                box does. You are going to see, when you keep scrolling, it is
+                been sticky to top:0px.
+                <span class="item"
+                  >It keeps its position until the end of its ancestor.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">fixed</div>
+            <div class="contentText">
+              <p>
+                An element with 'fixed' value always stays in the same place
+                even though the page is scrolled. It is always on user's
+                viewport.
+              </p>
+            </div>
+            <div class="fixed-box"><p class="author">Written by Gridea</p></div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .fixed-box{
+                    ...
+                    ...
+                    
+                    position: fixed;
+                    bottom: 0px;
+                    right: 0px;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                The box on the lower-right of the web-page is a fixed element.
+                As you can see, fixed element is always in the same place on the
+                viewport.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>

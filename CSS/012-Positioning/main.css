@@ -1,0 +1,100 @@
+/* POSITION VALUES */
+/* static: default value of every element. */
+/* relative: An element with 'relative' value is positioned relative to its exact position. */
+/* absolute: An element with 'absolute' value is positioned relative to the body element and also do not take place on the web page. However, if ancestor of the element will set as 'relative', our element will positioned relative to that 'relative' ancestor */
+/* sticky: An element with 'sticky' value "sticks" to screen as you coded to be, and stays at the viewport when website is scrolled. */
+/* fixed: An element with 'fixed' value always stays in the same place even though the page is scrolled. It is always on user's viewport. */
+
+
+/*this part(until the content-box selector) is to organize my web page. You may overlook it*/
+*{
+    box-sizing: border-box;
+}
+.example-absolute{
+    margin: 2em auto;
+    border: 2px dashed whitesmoke;
+    border-radius: 40px;
+    width: 100%;
+    height: 200px;
+}
+.example-relative{
+    margin: 2em auto;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.example-sticky{
+    margin: 2em auto;
+    border: 2px dashed whitesmoke;
+    border-radius: 40px;
+    width: 250px;
+    height: 1000px;
+}
+.author{
+    margin: 0px;
+}
+.extraText{
+    font-weight: 600;
+    margin-top: 7px;
+}
+.box{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: var(--primaryBoxColor);
+}
+
+
+
+
+/* USAGES */
+
+/* relative */
+
+.relative-box:hover{
+    background-color: var(--secondaryBoxColor);
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/* absolute */
+.absolute-box{
+    position: absolute;
+    right: 50px;
+}
+.example-absolute:hover{
+    .absolute-box{
+        background-color: var(--secondaryBoxColor);
+    }
+    position: relative;
+}
+
+/* sticky */
+.sticky-box{
+    background-color: var(--primaryBoxColor);
+    position: sticky;
+    top: 0px;
+}
+
+/* fixed */
+.fixed-box{
+    margin: 0px;
+    font-size:xx-large;
+    width: 290px;
+    height: 45px;
+    border: 3px solid var(--primaryBoxColor);
+    border-radius: 5px;
+    background-color: var(--secondaryBoxColor);
+    color: #caf0f8;
+    
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
