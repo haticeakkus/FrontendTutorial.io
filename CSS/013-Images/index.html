@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <!-- Vector Section -->
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png " alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Adding Images</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png "
+          alt=""
+        />
+
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Back-ground image: url();</div>
+            <div class="contentText">
+              The code used to add a photo inside a field is as follows:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .imgArea { 
+                        background-image: url( images/example.jpg );
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              The class name of the div containing the image is "imgArea". You
+              should add this code inside the css file. However, we realize that
+              the picture is repeating and does not look good aesthetically.
+              Let's change other properties step by step.
+            </div>
+            <div class="imgArea"></div>
+          </div>
+        </div>
+        <br /><br />
+        <!-- Topic Title -->
+        <div class="topicSubTitle">Properties</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png "
+          alt=""
+        />
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">
+              Background-repeat, background-size, background-position,
+              background-attachment
+            </div>
+            <div class="contentText">
+              1 - The code for background-repeat feature is follows:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .imgArea { 
+                        background-image: url( images/example.jpg );               
+                        background-repeat: no-repeat;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              "no-repeat" allows the image to be displayed only once. "repeat-x"
+              makes it repeat horizontally and "repeat-y" makes it repeat
+              vertically.
+            </div>
+            <div class="imgArea"></div>
+          </div>
+        </div>
+        <br /><br />
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              2 - The code for background-position feature is follows:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .imgArea { 
+                        background-image: url( images/example.jpg );
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                <element class="item">center:</element> Centers the background
+                image both horizontally and vertically within the element's
+                background area.
+              </p>
+            </div>
+            <br /><br />
+            <div class="imgArea"></div>
+            <div class="contentText">
+              <p>
+                <element class="item">left:</element> Positions the background
+                image at the left edge of the element's background area.
+                <br /><br />
+                <element class="item">right:</element> Positions the background
+                image at the right edge of the element's background area.
+                <br /><br />
+                <element class="item"> top: </element>Positions the background
+                image at the top edge of the element's background area.
+                <br /><br />
+                <element class="item">bottom:</element> Positions the background
+                image at the bottom edge of the element's background area.
+              </p>
+            </div>
+            <br /><br />
+            <div class="contentText">
+              These values determine where the background image is placed within
+              the element's background area without altering the other
+              alignment.
+            </div>
+          </div>
+        </div>
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              3 - The code for background-size feature is follows:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .imgArea { 
+                        background-image: url(images/example.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                <element class="item">cover:</element> scales the image to fully
+                cover the background area, potentially cropping parts of the
+                image.
+              </p>
+            </div>
+            <div class="imgArea"></div>
+            <br /><br />
+            <div class="contentText">
+              <p>
+                <element class="item">contain: </element>scales the image to fit
+                within the background area without cropping, ensuring the entire
+                image is visible.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <!-- Text Area -->
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              4 - The code for background-attachment feature is follows:
+            </div>
+            <!-- Code Area -->
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .imgArea { 
+                        background-image: url(images/example.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        background-attachment: scroll;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              It is difficult to show this feature in a narrow area through the
+              picture, let's explain it in terms of concepts:
+            </div>
+            <br /><br />
+
+            <div class="contentText">
+              <p>
+                <element class="item">scroll:</element> scrolls the background
+                image along with the element's content. <br /><br />
+                <element class="item">local: </element>is used less frequently
+                and makes the background image scroll with individual elements
+                that have their own scrolling. <br /><br />
+                <element class="item">fixed:</element> keeps the background
+                image fixed relative to the viewport, creating a consistent
+                background effect as the content scrolls over it.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
