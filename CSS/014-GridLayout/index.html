@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Grid Layout</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">grid-container</div>
+            <br />
+            <div class="contentText">
+              <p>
+                Using the Grid layout begins with setting a grid container. Grid
+                container includes:
+              </p>
+            </div>
+            <div class="contentText">
+              <p>
+                <span class="item">display: grid </span> : generates a
+                block-level grid
+              </p>
+              <p>
+                <span class="item">grid-template-columns</span> : defines how
+                wide columns should be.
+              </p>
+              <p>
+                <span class="item">grid-template-rows</span> : defines how long
+                columns should be.
+              </p>
+              <p>
+                <span class="item">grid-auto-columns</span> : specifies the size
+                of any auto-generated grid column tracks.
+              </p>
+              <p>
+                <span class="item">grid-auto-rows</span> : specifies the size of
+                any auto-generated grid row tracks.
+              </p>
+              <p>
+                <span class="item">grid-column-gap</span> : puts some space
+                between the columns.
+              </p>
+              <p>
+                <span class="item">grid-row-gap</span> : puts some space between
+                the rows.
+              </p>
+              <p>
+                <span class="item">gap</span> : puts space between both the
+                columns and rows.
+              </p>
+              <p><span class="item">fr</span> : the fractional unit fr is using instead of percentage.</p>
+            </div>
+            <div class="contentText"><p>Let's put them together;</p></div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .grid-container{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 3fr 5fr;
+                    gap: 10px;
+                    background-color: #7364d273;
+                  }
+                  .grid-item{
+                    background-color: #858ae388;
+                  }</pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+            <div class="contentText">
+              <p>
+                Now we have 3 columns each width is equal, 2 rows split in
+                proportions of 3:5 and 10px space between columns and rows. ( I
+                also added width, height and 10px padding in container.) Simple
+                grid layout. Nothing complex yet !
+              </p>
+            </div>
+            <div class="grid-container">
+              <div class="grid-item">1</div>
+              <div class="grid-item">2</div>
+              <div class="grid-item">3</div>
+              <div class="grid-item">4</div>
+              <div class="grid-item">5</div>
+              <div class="grid-item">6</div>
+            </div>
+
+            <div class="contentTitle"><p>grid-items</p></div>
+            <div class="contentText">
+              <p>Grid item is the children of the grid container.</p>
+            </div>
+            <div class="contentText">
+              <p>
+                <span class="item">grid-column</span> : Shorthand for
+                grid-column-start + grid-column-end. Specifies a grid item's
+                size and location.
+              </p>
+              <p>
+                <span class="item">grid-row</span> : Shorthand for
+                grid-row-start + grid-row-end. Specifies a grid item's size and
+                location.
+              </p>
+              <p>
+                <span class="item">grid-area</span> : This property can be used
+                as shorthand for row-start + column-start + row-end + column-end
+                + column-end.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .grid-container{
+                    width: 55%;
+                    min-height: 200px;
+                    display: grid;
+                    background-color: #7364d273;
+                    grid-auto-rows: minmax(100px,auto);
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                    padding: 10px;
+                  }
+              
+                  .grid-container div{
+                    text-aligns: center;
+                    border: 1px solid black;
+                    background-color: #858ae3b6;
+                  }
+              
+                  .grid-item-3{
+                    grid-column: 3/4;
+                    grid-row: 1/3;
+                  }
+
+                  .grid-item-4{
+                    grid-column: 1/3;
+                    grid-row: 2/3;;
+                  }
+
+                  .grid-item-5{
+                    grid-area: 3/1/4/4;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="grid-container-2">
+              <div class="grid-item-1">1</div>
+              <div class="grid-item-2">2</div>
+              <div class="grid-item-3">3</div>
+              <div class="grid-item-4">4</div>
+              <div class="grid-item-5">5</div>
+            </div>
+          </div>
+          <!-- textcontent -->
+        </div>
+        <!-- textarea -->
+        <br /><br />
+      </div>
+      <!-- container -->
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
