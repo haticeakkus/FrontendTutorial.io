@@ -1,0 +1,50 @@
+/* Styles for all screen sizes */
+
+/* Media query for screens with a max width of 600px */
+@media (max-width: 600px) {
+  .queryArea {
+    background-color: rgb(154, 122, 184);
+    /* light purple background for small screens */
+    width: 100%;
+  }
+}
+
+/* Media query for screens with a min width of 601px and max width of 800px */
+@media (min-width: 601px) and (max-width: 800px) {
+  .queryArea {
+    background-color: rgb(44, 9, 65);
+    /*purple background for medium screens */
+    width: 100%;
+  }
+}
+
+/* Media query for screens with a min width of 800px */
+@media (min-width: 800px) {
+  .queryArea {
+    background-color: rgb(9, 1, 12);
+    /* dark purple background for large screens */
+    width: 100%;
+  }
+
+}
+.textArea .queryArea {
+  width: 90%;
+  border-radius: 40px;
+  border: 1px white solid;
+  margin: 50px auto 0px;
+}
+
+.item {
+  font-size: 25px;
+  font-style: italic;
+  color: burlywood;
+}
+
+ul {
+  margin: 50px;
+  padding: 10px;
+}
+
+li {
+  padding-bottom: 10px;
+}
