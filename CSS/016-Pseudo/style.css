@@ -1,0 +1,56 @@
+.pseudo1 p:first-child {
+    color: #e9c46a;
+    margin-bottom: 20px;
+}
+.pseudo1 p:nth-child(2){
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+.pseudo1 p:nth-child(3){
+    color: #e76f51;
+}
+
+.contentText a:link{
+    color: #e2b9fa;
+
+}
+.contentText a:visited{
+    color: #8bd8ff;
+
+}
+.contentText a:hover{
+    color: #aeffcd;
+}
+.contentText a:active{
+    color: #ffac81;
+}
+
+/*--/////////////--*/
+
+.pseudo2 a::before {             
+    content: "Click here: ";
+    color: #cec2ff;
+} 
+.pseudo2 a::after {               
+    content: ' (' attr(href) ') ';
+    color: #beffca;
+}
+.pseudo2 a:any-link{            
+    color: #a8deff;
+}
+
+.pseudo2 p{
+    color: rgb(244, 242, 255);
+}
+.pseudo2 p::first-letter{
+    font-size: 2em;
+}
+.pseudo2 p::first-line{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudos</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Pseudo</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Pseudo classes</div>
+            <div class="contentText">
+              <p>
+                A CSS pseudo-class is a keyword added to a selector that
+                specifies a special state of the selected element.
+              </p>
+            </div>
+            <div class="contentText">
+              <p>
+                <span class="item">:link</span> - Matches links that have not
+                yet been visited.
+              </p>
+              <p>
+                <span class="item">:visited</span> - Matches links that have
+                been visited.
+              </p>
+              <p>
+                <span class="item">:any-link</span> - Matches an element if the
+                element would match either :link or :visited.
+              </p>
+              <p>
+                <span class="item">:hover</span> - Matches when the user hovers
+                over an element with the pointer.
+              </p>
+              <p>
+                <span class="item">:active</span> - Matches when an item is
+                being activated by the user. For example, when the item is
+                clicked on.
+              </p>
+              <p>
+                <span class="item">:focus</span> - Matches when an element has
+                focus. For example, when the user clicks or taps on an element
+                or selects it with the keyboard's Tab key.
+              </p>
+              <p>
+                <span class="item">:first-child</span> - Select the specified
+                selector, only if it is the first child of its parent.
+              </p>
+              <p>
+                <span class="item">:nth-child(n)</span> - Matches every element
+                that is the nth child of its parent. n can be a number, or a
+                keyword (odd or even).
+              </p>
+            </div>
+            <div class="contentText"><p>Here an example:</p></div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;a href="https://www.aybubiltek.com/" target="_blank"&gt;This is a link&lt;/a&gt;
+                  &lt;div class="pseudo1"&gt;
+                    &lt;p&gt; This is an example paragraph 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    &lt;/p&gt;
+                    &lt;p&gt; This is an example paragraph 2. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    &lt;/p&gt;
+                    &lt;p&gt; This is an example paragraph 3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                  <span class="item">CSS</span>
+                  a:link{
+                    color: purple;
+                  }
+                  a:visited{
+                    color: blue;
+                  }
+                  a:hover{
+                    color: green;
+                  }
+                  a:active{
+                    color: orange;
+                  }
+                  
+                  .pseudo1 p:first-child {
+                    color: #e9c46a;
+                    margin-bottom: 20px;
+                  }
+                  .pseudo1 p:nth-child(2){
+                    color: #2a9d8f;
+                    margin-bottom: 20px;
+                  }
+                  .pseudo1 p:nth-child(3){
+                    color: #e76f51;
+                  }</pre>
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+            <div class="contentText">
+              <a href="https://www.aybubiltek.com/" target="_blank"
+                >This is a link</a
+              ><br /><br />
+              <div class="pseudo1">
+                <p>
+                  This is an example paragraph 1. Lorem ipsum dolor sit, amet
+                  consectetur adipisicing elit.
+                </p>
+                <p>
+                  This is an example paragraph 2. Lorem ipsum dolor sit, amet
+                  consectetur adipisicing elit.
+                </p>
+                <p>
+                  This is an example paragraph 3. Lorem ipsum dolor sit, amet
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- textcontent -->
+        </div>
+        <!-- textarea -->
+
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Pseudo elements</div>
+            <div class="contentText">
+              <p>
+                A CSS pseudo-element is a keyword added to a selector that lets
+                you style a specific part of the selected element.
+              </p>
+            </div>
+            <div class="contentText">
+              <p>
+                <span class="item">::after</span> - Creates a pseudo-element
+                that is the last child of the selected element.
+              </p>
+              <p>
+                <span class="item">::before</span> - Creates a pseudo-element
+                that is the first child of the selected element.
+              </p>
+              <p>
+                <span class="item">::first-letter</span> - Applies styles to the
+                first letter of the first line of a block-level element.
+              </p>
+              <p>
+                <span class="item">::first-line</span> - Applies styles to the
+                first line of a block-level element.
+              </p>
+            </div>
+            <div class="contentText"><p>Here an example:</p></div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  <span class="item">HTML</span>
+                  &lt;div class="pseudo2"&gt;
+                  &lt;p&gt;This is an example paragraph. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam voluptate laboriosam, inventore culpa possimus voluptatibus, ab aut veritatis ea cupiditate nesciunt, animi blanditiis esse est accusantium nemo molestiae magni nihil.
+                  &lt;/p&gt;
+                  &lt;a href="https://www.aybubiltek.com/" target="_blank"&gt;This is a link&lt;/a&gt;
+                  &lt;/div&gt;
+                  <span class="item">CSS</span>
+                  .pseudo2 a::before {             
+                    content: "Click here: ";
+                    color: #cec2ff;
+                  } 
+                  .pseudo2 a::after {               
+                    content: ' (' attr(href) ') ';
+                    color: #beffca;
+                  }
+                  .pseudo2 a:any-link{            
+                    color: #a8deff;
+                  }
+                  .pseudo2 p{
+                    color: rgb(244, 242, 255);
+                  }
+                  .pseudo2 p::first-letter{
+                    font-size: 2em;
+                  }
+                  .pseudo2 p::first-line{
+                    font-weight: bold;
+                    text-decoration: underline;
+                  }</pre>
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+            <div class="contentText">
+              <div class="pseudo2">
+                <p>
+                  This is an example paragraph. Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Totam voluptate laboriosam,
+                  inventore culpa possimus voluptatibus, ab aut veritatis ea
+                  cupiditate nesciunt, animi blanditiis esse est accusantium
+                  nemo molestiae magni nihil.
+                </p>
+                <a href="https://www.aybubiltek.com/" target="_blank"
+                  >This is a link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- textcontent -->
+        </div>
+        <!-- textarea -->
+        <br /><br />
+      </div>
+      <!-- container -->
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
