@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Variables and var()</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">What Is Variables?</div>
+            <div class="contentText">
+              <p>
+                Variables is used to hold a particular value and use that value
+                wherever we want.
+              </p>
+              <p>
+                For example,
+                <span class="item"
+                  >the box class' background color is declared by a variable in
+                  the code below:</span
+                >
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .box{
+                        background-color: var(--bgColor);
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                In CSS, a double dash is used to declare variables such as
+                <span class="item">--main-color:blue</span>. CSS variable names
+                are case sensitive. The
+                <span class="item">--main-color</span> and
+                <span class="item">--Main-Color</span> variables are perceived
+                by browsers as different variable names.
+              </p>
+              <p>
+                To use var() in CSS, a variable must be defined.
+                <span class="item"
+                  >You can specify global and local variables.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Global Variables</div>
+            <div class="contentText">
+              <p>
+                A global variable can be called from any line of of any code
+                block. Global variables
+                <span class="item">must be declared within the :root</span>
+                psuedo class.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    :root{
+                        --mycolor: purple;
+                        --fontWeight: 900;
+                        --borderRadiusValue: 10px;
+                    }
+                    .box1{
+                        background-color: var(--mycolor);
+                        font-weight: var(--fontWeight);
+                        border-radius: var(--borderRadiusValue);
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="boxes box1">This is a box</div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Local Variables</div>
+            <div class="contentText">
+              <p>
+                Contrary to the global variables, local variables can be called
+                just in the code block it declared. Furthermore, local variables
+                have the ability to override global variables. (See the example
+                below)
+              </p>
+              <p>
+                These variables are defined within an element, not in :root{}.
+              </p>
+            </div>
+            <br />
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    :root{
+                        --mycolor: purple;
+                        --fontWeight: 900;
+                        --borderRadiusValue: 10px;
+                    }
+                    .box2{
+                        --mycolor: #7364d273;
+                        --borderRadiusValue: 10px;
+                        background-color: var(--mycolor);
+                        border-radius: var(--borderRadiusValue);
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="boxes box2">This is a box</div>
+            <div class="contentTitle">Important Footnote</div>
+            <div class="contentText">
+              <p>
+                Even though '--mycolor' variable equals to purple in the :root
+                pseudo class, we override the purple color and set the box's
+                background color to color #7364d273
+                <span class="item">because of the local variable</span>. And
+                also we added a border radius not with a certain value but with
+                a variable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>

@@ -1,0 +1,23 @@
+:root{
+    --mycolor: purple;
+    --fontWeight: 900;
+    --borderRadiusValue: 10px;
+}
+.boxes{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+}
+.box1{
+    background-color: var(--mycolor);
+    font-weight: var(--fontWeight);
+    border-radius: var(--borderRadiusValue);
+}
+.box2{
+    margin-bottom: 20px;
+    --mycolor: #7364d273;
+    background-color: var(--mycolor);
+    border-radius: var(--borderRadiusValue);
+}
