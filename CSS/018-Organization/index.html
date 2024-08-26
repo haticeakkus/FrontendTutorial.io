@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organization</title>
+
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Organization</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentText">
+              <p>
+                As you start to work on larger stylesheets and big projects you
+                will discover that maintaining a huge CSS file can be
+                challenging. In this article we will take a brief look at some
+                best practices for writing your CSS to make it easily
+                maintainable, and some of the solutions you will find in use by
+                others to help improve maintainability.
+              </p>
+            </div>
+            <div class="contentTitle">Tips to keep your CSS tidy</div>
+            <div class="contentText">
+              <p>
+                Here are some general suggestions for ways to keep your
+                stylesheets organized and tidy.
+              </p>
+            </div>
+            <div class="contentTitle">
+              Does your project have a coding style guide?
+            </div>
+            <div class="contentText">
+              If you are working with a team on an existing project, the first
+              thing to check is whether the project has an existing style guide
+              for CSS. The team style guide should always win over your own
+              personal preferences. There often isn't a right or wrong way to do
+              things, but consistency is important.
+            </div>
+            <br />
+            <div class="contentTitle">Keep it consistent</div>
+            <div class="contentText">
+              If you get to set the rules for the project or are working alone,
+              then the most important thing to do is to keep things consistent.
+              Consistency can be applied in all sorts of ways, such as using the
+              same naming conventions for classes, choosing one method of
+              describing color, or maintaining consistent formatting. (For
+              example, will you use tabs or spaces to indent your code? If
+              spaces, how many spaces?) <br /><br />
+
+              Having a set of rules you always follow reduces the amount of
+              mental overhead needed when writing CSS, as some of the decisions
+              are already made.
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Formatting readable CSS</div>
+            <div class="contentText">
+              <p>
+                There are a couple of ways you will see CSS formatted. Some
+                developers put all of the rules onto a single line, like so:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .box {background-color: #567895; }
+                  h2 {background-color: black; color: white; }
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                Other developers prefer to break everything onto a new line:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .box {
+                    background-color: #567895;
+                  }
+                  h2 {
+                    background-color: black;
+                    color: white;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                CSS doesn't mind which one you use. We personally find it is
+                more readable to have each property and value pair on a new
+                line.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Comment your CSS</div>
+            <div class="contentText">
+              <p>
+                Adding comments to your CSS will help any future developer work
+                with your CSS file, but will also help you when you come back to
+                the project after a break.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  /* This is a CSS comment
+                  It can be broken onto multiple lines. */
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                A good tip is to add a block of comments between logical
+                sections in your stylesheet too, to help locate different
+                sections quickly when scanning it, or even to give you something
+                to search for to jump right into that part of the CSS. If you
+                use a string that won't appear in the code, you can jump from
+                section to section by searching for it — below we have used
+                <mark> || </mark>.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  /* || General styles */
+
+                  /* … */
+
+                  /* || Typography */
+
+                  /* … */
+
+                  /* || Header and Main Navigation */
+
+                  /* … */</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                You don't need to comment every single thing in your CSS, as
+                much of it will be self-explanatory. What you should comment are
+                the things where you made a particular decision for a reason.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Avoid overly-specific selectors</div>
+            <div class="contentText">
+              <p>
+                If you create very specific selectors, you will often find that
+                you need to duplicate chunks of your CSS to apply the same rules
+                to another element. For example, you might have something like
+                the below selector, which applies the rule to a
+                <span class="item">&lt;p&gt;</span>
+                with a class of <span class="item">box</span> inside an
+                <span class="item">&lt;article&gt;</span> with a class of
+                <span class="item">main</span> main.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  article.main p.box {
+                    border: 1px solid #ccc;
+                  }
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                If you then wanted to apply the same rules to something outside
+                of <span class="item">main</span>, or to something other than a
+                <span class="item">&lt;p&gt;</span>, you would have to add
+                another selector to these rules or create a whole new ruleset.
+                Instead, you could use the selector
+                <span class="item">.box</span> to apply your rule to any element
+                that has the class <span class="item">box</span>:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .box {
+                    border: 1px solid #ccc;
+                  }
+                </pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                There will be times when making something more specific makes
+                sense; however, this will generally be an exception rather than
+                usual practice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
