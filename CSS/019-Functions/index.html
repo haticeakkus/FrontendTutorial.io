@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/vectors/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Functions</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">CSS Functions</div>
+
+            <div class="contentText">
+              <p>
+                <span class="item">attr( )</span> : Uses the attributes defined
+                on HTML element.
+                <a href="https://www.aybubiltek.com/" target="_blank"
+                  >It's an example</a
+                >
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  a:hover::after {
+                    content: ' (source: ' attr(href) ') ';
+                    color: #c7c7ff;
+                  }</pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">calc( )</span> : The math function that
+                performs basic arithmetic calculations on numerical values.
+                There are some uses of this function:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  width: calc(100% - 30px);
+                  width: calc(100% / 4);
+                  font-size: calc(1.5rem + 3vw); </pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">max( )</span> : Uses the largest value, from
+                a comma-separated list of values. There are some good uses:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  width: max(20vw, 100px);
+                  height: max(30vh, 200px);
+                  font-size: max(1.5rem, 3vh);  </pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">min( )</span> : Uses the smallest value, from
+                a comma-separated list of values. There are some good uses:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  width: min(200px, 50vw);
+                  height: min(300px, 40vh);
+                  font-size: min(2rem, 3vh); </pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">clamp( )</span> : Calculates the central of a
+                minimum, central, and maximum values. There are some examples:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  width: clamp(20rem, 30vw, 70rem);
+                  height: clamp(10vh, 20em, 100vh);
+                  font-size: clamp(1.5rem, 3vh, 2rem);</pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">var( )</span> : Inserts the value of a custom
+                property. Here an example;
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  :root {
+                    --bg-color: purple;
+                    --txt-color: blue;  
+                    --main-padding: 20px;  
+                  }
+                  
+                  .div {
+                    background-color: var(--bg-color);
+                    color: var(--txt-color);
+                    padding: var(--main-padding);
+                  } </pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">url( )</span> : Uses a file from the
+                specified URL. Some examples:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  body{
+                    background-image: url(img/background2.jpg);
+                  }
+
+                  li::before {
+                    content: url(tick.gif);
+                  }</pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+
+            <div class="contentText">
+              <p>
+                <span class="item">rgb( )</span> : Defines colors according to
+                red-green-blue model and transparency.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  color: rgb(109, 109, 209, 80%);
+                  background-color: rgb(199, 199, 255);</pre
+                >
+              </div>
+              <!-- codeContent -->
+            </div>
+            <!-- codearea -->
+          </div>
+          <!-- textcontent -->
+          <!-- BEYAZ ÇİZGİ -->
+        </div>
+        <!-- textarea -->
+        <br /><br />
+      </div>
+      <!-- container -->
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
