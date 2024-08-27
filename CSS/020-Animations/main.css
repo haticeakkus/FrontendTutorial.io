@@ -1,0 +1,136 @@
+/* PROPERTIES WHICH USED WITH TRANSFORM */
+/* translate(x,y): Moves the element according to x and y. */
+/* rotate(x): Rotate the element around itself. */
+/* scale(x,y): Sets the size of the element. */
+/* skew: Lean the element's borders. */
+/* END OF THE 'TRANSFORM' PROPERTIES */
+
+/* transition-property: Choses what changes are going to be affected. */
+/* transition-duration: Sets how long it will take time. */
+/* transition-delay: Sets the delay time. */
+/* transition-time-function: Sets the animation process whether it will slow at the beginning or in the end(or non of them). */
+
+/* animation-name: Names the animation. */
+/* animation-duration: Sets how long the animation will take time. */
+/* animation-timing-function: Sets the animation process whether it will slow at the beginning or in the end(or non of them). */
+/* animation delay: Sets the delay time. */
+/* animation-iteration-count: Sets how many times the animation is going to repeat. */
+/* animation-direction: Sets how animation is going to act: normal, reverse, or alternate(one normal and than one reverse). */
+/* animation-fill-mode: It is used to specify which style value is going to retain after the animation: the style before the animation, or after the animation. */
+
+/*this part(until the content-box selector) is to organize my web page. You may overlook it*/
+:root{
+    --responsiveAnimationRange: 300px;
+}
+
+.examples1{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.examples2{
+    margin:0 auto;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-color:var(--primaryBoxColor);
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+/* */
+
+
+
+/* TRANSFORM*/
+.translateBox:hover{
+    transform: translate(-20%,30%);
+    background-color: var(--secondaryBoxColor);
+}
+.rotateBox:hover{
+    transform: rotate(45deg);
+    background-color: var(--secondaryBoxColor);
+}
+.scaleBox:hover{
+    transform: scale(75%,110%);
+    background-color: var(--secondaryBoxColor);
+}
+.skewBox:hover{
+    transform: skew(10deg,20deg);
+    background-color: var(--secondaryBoxColor);
+}
+
+
+
+/* TRANSITION*/
+.transition:hover{
+    background-color: var(--secondaryBoxColor);
+    transform: rotate(360deg);
+    /* transition-property: background-color, transform;
+    transition-duration: 2s;
+    transition-delay: 0.25s;
+    transition-timing-function: ease; */
+
+    /* In short, you can use it like this */
+    transition: all 2s ease 0.25s;
+}
+
+
+
+/* ANIMATION */
+.animation:active{
+    background-color: var(--secondaryBoxColor);
+    animation-name:slide-box;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0.25;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    /* In short, you can use it like this */
+    /* animation: 3s ease 0.25 3 normal forwards slide-box; */
+}
+/* to use animate properties, we must declare keyframes */
+@keyframes slide-box/* name of our animation*/ {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(var(--responsiveAnimationRange)) rotate(180deg);
+    }
+
+    66% {
+        transform: translateX(var(--minusResponsiveAnimationRange)) rotate(-180deg);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .examples1 .box{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 910px){
+    :root{
+        --responsiveAnimationRange: 100px;
+        --minusResponsiveAnimationRange: -100px;
+    }
+    .examples1 .box{
+        grid-template-columns: 2;
+    }
+}

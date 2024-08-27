@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../template/img/icons/iconCSS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">CSS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Animations</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">transform</div>
+            <div class="contentText">
+              <p>
+                It is the property that is used to change an element's
+                condition. All of them might be used as valueX, valueY, or
+                valueZ.
+              </p>
+              <br />
+              <p>This property's values are:</p>
+              <p>
+                <span class="item">translate(x,y):</span> Moves the element
+                according to x and y.
+              </p>
+              <p>
+                <span class="item">rotate(x):</span> Rotate the element around
+                itself.
+              </p>
+              <p>
+                <span class="item">scale(x,y):</span> Sets the size of the
+                element.
+              </p>
+              <p>
+                <span class="item">skew(x,y):</span> Lean the element's borders.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .translateBox:hover{
+                    transform: translate(-20%,30%);
+                    background-color: var(--secondaryBoxColor);
+                  }
+                  .rotateBox:hover{
+                    transform: rotate(45deg);
+                    background-color: var(--secondaryBoxColor);
+                  }
+                  .scaleBox:hover{
+                    transform: scale(75%,110%);
+                    background-color: var(--secondaryBoxColor);
+                  }
+                  .skewBox:hover{
+                    transform: skew(10deg,20deg);
+                    background-color: var(--secondaryBoxColor);
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="examples1">
+              <div class="box translateBox">Translate Box</div>
+              <div class="box rotateBox">Rotate Box</div>
+              <div class="box scaleBox">Scale Box</div>
+              <div class="box skewBox">Skew Box</div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>You can see the differences if you hover the boxes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">
+              transition-property, transition-duration, transition-delay,
+              transition-time-function
+            </div>
+            <div class="contentText">
+              <p>
+                There are properties to make differences slowly and visible:
+              </p>
+              <br />
+              <p>
+                <span class="item">transition-property:</span> Choses what
+                changes are going to be affected.
+              </p>
+              <p>
+                <span class="item">transition-duration:</span> Sets how long it
+                will take time.
+              </p>
+              <p>
+                <span class="item">transition-delay:</span> Sets the delay time.
+              </p>
+              <p>
+                <span class="item">transition-time-function:</span> Sets the
+                animation process whether it will slow at the beginning or in
+                the end(or non of them).
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    .transition:hover{
+                        background-color: var(--secondaryBoxColor);
+                        transform: rotate(360deg);
+
+                        transition-property: background-color, transform;
+                        transition-duration: 2s;
+                        transition-delay: 0.25s;
+                        transition-timing-function: ease;
+                    
+                        /* In short, you can use it like this */
+                        ->transition: all 2s ease 0.25s;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="examples2">
+              Hover the Box Below
+              <div class="box transition">Transitioned Box</div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Animate</div>
+            <br />
+            <div class="contentText"></div>
+            <div class="contentText">
+              <p>
+                <span class="item">animation-name:</span> Names the animation.
+              </p>
+              <p>
+                <span class="item">animation-duration:</span> Sets how long the
+                animation will take time.
+              </p>
+              <p>
+                <span class="item">animation-timing-function:</span> Sets the
+                animation process whether it will slow at the beginning or in
+                the end(or non of them).
+              </p>
+              <p>
+                <span class="item">animation delay:</span> Sets the delay time.
+              </p>
+              <p>
+                <span class="item">animation-iteration-count:</span> Sets how
+                many times the animation is going to repeat.
+              </p>
+              <p>
+                <span class="item">animation-direction:</span> Sets how
+                animation is going to act: normal, reverse, or alternate(one
+                normal and than one reverse).
+              </p>
+              <p>
+                <span class="item">animation-fill-mode:</span> It is used to
+                specify which style value is going to retain after the
+                animation: the style before the animation, or after the
+                animation.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  .animation:active{
+                    background-color: var(--secondaryBoxColor);
+                    animation-name:slide-box;
+                    animation-duration: 3s;
+                    animation-timing-function: ease;
+                    animation-delay: 0.25;
+                    animation-iteration-count: 3;
+                    animation-direction: normal;
+                    animation-fill-mode: forwards;
+                
+                    /* In short, you can use it like this */
+                    /* animation: 3s ease 0.25 3 normal forwards slide-box; */
+                  }
+                  /* to use animate properties, we must declare keyframes */
+                  @keyframes slide-box/* name of our animation*/ {
+                    0% {
+                        transform: translateX(0);
+                    }
+                
+                    33% {
+                        transform: translateX(300px) rotate(180deg);
+                    }
+                
+                    66% {
+                        transform: translateX(-300px) rotate(-180deg);
+                    }
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="examples2">
+              Click and hold item
+              <div class="box animation">Animated Box</div>
+            </div>
+            <div class="contentTitle">Footnote</div>
+            <div class="contentText">
+              <p>
+                Besides of the properties, we must declare a keyframe as you can
+                see at the code practice part to make an animation.
+                <span class="item"
+                  >slide-box value after the @keyframe is the name of our
+                  animation.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+      <br /><br /><br />
+    </main>
+  </body>
+</html>
