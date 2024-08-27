@@ -1,0 +1,17 @@
+.boxArea {
+  margin: 20px auto;
+  width: 60%;
+  .imgArea1 {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.item {
+  display: inline-block;
+}
+
+@media screen and (max-width: 910px){
+  .boxArea {
+    width: 100%;
+  }
+}
