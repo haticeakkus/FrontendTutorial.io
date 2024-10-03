@@ -1,0 +1,50 @@
+nav {
+  width: 70%;
+  border-radius: 40px;
+  background-color: rgba(56, 38, 67, 0.5);
+  padding: 35px 35px 25px;
+  margin: 30px auto;
+  line-height: 1.8em;
+}
+
+nav {
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.imgArea {
+  margin: 20px auto;
+  width: 30%;
+}
+.imgArea img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#box {
+  width: 80%;
+  margin: 25px 25px 25px 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .imgArea {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 710px) {
+  .imgArea {
+    width: 70%;
+  }
+}/*# sourceMappingURL=main.css.map */

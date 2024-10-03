@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Sass</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/jpg" href="../../template/img/icons/iconSASS.png">
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">SASS</div>
+    </header>
+    <main>
+      <div class="container">
+         <div class="topicSubTitle">Nested</div>
+         <img class="vector2" src="../../template/img/vectors/Vector 16.png" alt="" />
+              <div class="textArea">
+              <div class="textContent">
+              <div class="contentTitle">Sass Nested Rules and Properties</div>
+              <div class="contentText">
+              <p>
+                <span class="item">Sass Nested Rules</span><br>
+                Sass lets you nest CSS selectors in the same way as HTML.
+                
+                Look at an example of some Sass code for a site's navigation:
+              </p>
+            </div>
+            <div class="imgArea"><img src="img/nestedCode.PNG" alt=""></div>
+            <div class="box">
+                <nav>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">SASS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contentText">
+                <p>
+                    Notice that in Sass, the <span class="item">ul</span>, <span class="item">li</span>, and <span class="item">a</span> selectors are nested inside the nav selector.
+
+                    While in CSS, the rules are defined one by one (not nested):
+                </p>
+            </div>
+            <div  class="imgArea"><img src="img/nested_mapCode.PNG" alt=""></div>
+            <div class="contentText"><p>Because you can nest properties in Sass, it is cleaner and easier to read than standard CSS.</p></div>
+         </div>
+         </div>
+           <div class="textArea">
+           <div class="textContent">
+             <div class="contentTitle">Sass Nested Properties</div></div>
+             <div class="contentText">
+              <p>Many CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, text-transform and text-overflow.
+
+                With Sass you can write them as nested properties:</p>
+             </div>
+             <div class="codeArea">
+                <div class="codeContent"><pre>
+                    font: {
+                    family: Helvetica, sans-serif;
+                    size: 18px;
+                    weight: bold;
+                  }
+                  
+                  text: {
+                    align: center;
+                    transform: lowercase;
+                    overflow: hidden;
+                  }</pre></div>
+             </div>
+             <div class="contentText"><p>The Sass transpiler will convert the above to normal CSS:</p></div>
+             <div class="codeArea">
+                  <div class="codeContent"><pre>
+                    font-family: Helvetica, sans-serif;
+                    font-size: 18px;
+                    font-weight: bold;
+                    
+                    text-align: center;
+                    text-transform: lowercase;
+                    text-overflow: hidden;</pre></div>
+             </div> 
+        </div><br><br><br>
+      </div>
+      
+    </div>
+    </main> <br><br><br>
+  </body>
+</html>
