@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@import</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconSASS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">SASS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Import</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Sass @import</div>
+            <div class="contentText">
+              <p>
+                The <b>@import</b> directive is used in SASS to combine style
+                sheets. However, in newer versions of SASS, it's recommended to
+                use <b>@use</b> instead of <b>@import.</b> Nevertheless, if I
+                were to explain <b>@import:</b>
+
+                Imagine a web project where you have a general stylesheet
+                structure and styles for different components. Let's use SASS to
+                organize these style files.
+              </p>
+            </div>
+            <ol>
+              <li>
+                <b>Project Directory Structure:</b><br />
+                <img class="screenshot" src="img/code1.PNG" alt="" />
+              </li>
+              <br />
+              <li>
+                <b>variables.scss:</b><br />
+                <p>
+                  In this file, you can define variables like colors, font
+                  sizes, etc.
+                </p>
+                <img class="screenshot" src="img/code2.PNG" alt="" />
+              </li>
+              <br />
+              <li>
+                <b>buttons.scss:</b><br />
+                <p>Define button styles in this file.</p>
+                <img class="screenshot" src="img/code3.PNG" alt="" />
+              </li>
+              <br />
+              <li>
+                <b>forms.scss:</b><br />
+                <p>Define styles for form elements here.</p>
+                <img class="screenshot" src="img/code4.PNG" alt="" />
+              </li>
+              <br />
+              <li>
+                <b>main.scss:</b><br />
+                <p>
+                  The main stylesheet, main.scss, can import other stylesheets.
+                </p>
+                <img class="screenshot" src="img/code5.PNG" alt="" />
+              </li>
+              <br />
+            </ol>
+            <div class="contentText">
+              <p>
+                This structure allows you to organize style files in a modular
+                way. With the <b>@import</b> directive, you can include
+                different files into the main stylesheet, combining them all
+                into a single CSS file. This makes your style code more
+                organized and manageable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+      </div>
+    </main>
+    <br /><br /><br />
+  </body>
+</html>
