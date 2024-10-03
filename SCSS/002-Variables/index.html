@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass Variables</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconSASS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../LandingPage/index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">SASS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">Variables</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Sass Variables</div>
+            <div class="contentText">
+              <p>
+                Variables are a way to store information that you can re-use
+                later. With Sass, you can store information in variables, like:
+              </p>
+            </div>
+            <div class="contentText">
+              <ul style="margin-left: 20px;">
+                <li><p>strings</p></li>
+                <li><p>numbers</p></li>
+                <li><p>colors</p></li>
+                <li><p>booleans</p></li>
+                <li><p>lists</p></li>
+                <li><p>nulls</p></li>
+              </ul>
+              <br>
+            </div>
+            <div class="contentText">
+              <p>
+                Sass uses the $ symbol, followed by a name, to declare
+                variables:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>                    $variablename: value;</pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                The following example declares 4 variables named myFont,
+                myColor, myFontSize, and myWidth. After the variables are
+                declared, you can use the variables wherever you want:
+              </p>
+            </div>
+          </div>
+          <div class="textContent">
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  $myFont: Helvetica, sans-serif;
+                  $myColor: red;
+                  $myFontSize: 18px;
+                  $myWidth: 680px;
+                  body {
+                    font-family: $myFont;
+                    font-size: $myFontSize;
+                    color: $myColor;
+                  }
+                  #container {
+                    width: $myWidth;
+                  }</pre
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contentText">
+            <p>
+              Dolayısıyla, Sass dosyası aktarıldığında değişkenleri (myFont,
+              myColor, vb.) alır ve CSS'ye yerleştirilen değişken değerleriyle
+              normal CSS'nin çıktısını şu şekilde verir:
+            </p>
+          </div>
+          <div class="codeArea">
+            <div class="codeContent">
+              <pre>
+                  body {
+                    font-family: Helvetica, sans-serif;
+                    font-size: 18px;
+                    color: red;
+                  }
+                  #container {
+                    width: 680px;
+                  }</pre
+              >
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Sass Variable Scope</div>
+            <div class="contentText">
+              <p>
+                Sass variables are only available at the level of nesting where
+                they are defined. Look at the following example:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  $myColor: red;
+                  h1 {
+                    $myColor: green;
+                    color: $myColor;
+                  }
+                  p {
+                    color: $myColor;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentTitle">Using Sass !global</div>
+            <div class="contentText">
+              <p>
+                The default behavior for variable scope can be overridden by
+                using the <span class="item">!global</span> switch.
+
+                <span class="item">!global</span> indicates that a variable is
+                global, which means that it is accessible on all levels. Look at
+                the following example (same as above; but with
+                <span class="item">!global</span> added):
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    $myColor: red;
+                    h1 {
+                      $myColor: green !global;
+                      color: $myColor;
+                    }
+                    p {
+                      color: $myColor;
+                    }</pre
+                >
+              </div>
+            </div>
+            <div class="textContent">
+              <p>
+                Now the color of the text inside a
+                <span class="item">&lt;p&gt;</span> tag will be green! So, the
+                CSS output will be:
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    h1 {
+                      color: green;
+                    }
+                    p {
+                      color: green;
+                    }</pre
+                >
+              </div>
+            </div>
+          </div> 
+        </div>
+        <br><br><br>
+      </div>
+      <br />
+    </main>
+    <br>
+    <br>
+     
+  </body>
+</html>
