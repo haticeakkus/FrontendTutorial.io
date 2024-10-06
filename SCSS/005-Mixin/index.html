@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@mixin</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../../template/img/icons/iconSASS.png"
+    />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <img src="../../template/img/vectors/Vector 14.png" alt="" />
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">SASS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">@Mixin</div>
+        <img
+          class="vector2"
+          src="../../template/img/vectors/Vector 16.png"
+          alt=""
+        />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Sass @mixin and @include</div>
+            <div class="contentTitle">Sass Mixins</div>
+            <div class="contentText">
+              <p>
+                The <b>@mixin</b> directive lets you create CSS code that is to
+                be reused throughout the website. The <b>@include</b> directive
+                is created to let you use (include) the mixin.
+              </p>
+            </div>
+            <hr />
+            <div class="contentTitle">Defining a Mixin</div>
+            <div class="contentText">
+              <p>
+                A mixin is defined with the
+                <span class="item">@mixin</span> directive.
+              </p>
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                    Sass @mixin Syntax:
+
+                    @mixin name {
+                      property: value;
+                      property: value;
+                      ...
+                    }</pre>
+              </div>
+            </div>
+            <div class="contentText">
+              <p>
+                The following example creates a mixin named "important-text":
+              </p>
+            </div>
+          </div>
+          <div class="textContent">
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+
+                  @mixin important-text {
+                    color: red;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border: 1px solid blue;
+                  }</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Using a Mixin</div>
+            <div class="contentText">
+              The <span class="item">@include</span> directive is used to
+              include a mixin.
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  Sass @include mixin Syntax:
+
+                  selector {
+                    @include mixin-name;
+                  }</pre>
+              </div>
+            </div>
+            <div class="contentText">
+              So, to include the important-text mixin created above:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+
+                  .danger {
+                    @include important-text;
+                    background-color: green;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              The Sass transpiler will convert the above to normal CSS:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  CSS output:
+
+                  .danger {
+                    color: red;
+                    font-size: 25px;
+                    font-weight: bold;
+                    border: 1px solid blue;
+                    background-color: green;
+                  }</pre>
+              </div>
+            </div>
+            <div class="contentText">
+              A mixin can also include other mixins:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+
+                  @mixin special-text {
+                    @include important-text;
+                    @include link;
+                    @include special-border;
+                  }</pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Passing Variables to a Mixin</div>
+            <div class="contentText">
+              Mixins accept arguments. This way you can pass variables to a
+              mixin. Here is how to define a mixin with arguments:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+                  
+                  /* Define mixin with two arguments */
+                  @mixin bordered($color, $width) {
+                    border: $width solid $color;
+                  }        
+                  .myArticle {
+                    @include bordered(blue, 1px);  // Call mixin with two values
+                  }       
+                  .myNotes {
+                     @include bordered(red, 2px); // Call mixin with two values
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              Notice that the arguments are set as variables and then used as
+              the values (color and width) of the border property. After
+              compilation, the CSS will look like this:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  CSS Output:
+
+                  .myArticle {
+                    border: 1px solid blue;
+                  }            
+                  .myNotes {
+                    border: 2px solid red;
+                  }</pre
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Default Values for a Mixin</div>
+            <div class="contentText">
+              It is also possible to define default values for mixin variables:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+
+                  @mixin bordered($color: blue, $width: 1px) {
+                    border: $width solid $color;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText">
+              Then, you only need to specify the values that change when you
+              include the mixin:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+
+                  .myTips {
+                    @include bordered($color: orange);
+                  }</pre>
+              </div>
+            </div>
+            <div class="contentTitle">Using a Mixin For Vendor Prefixes</div>
+            <div class="contentText">
+              Another good use of a mixin is for vendor prefixes. Here is an
+              example for transform:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax: 
+                  @mixin transform($property) { 
+                    -webkit-transform: $property; 
+                    -ms-transform: $property; 
+                    transform: $property; 
+                  }
+                  .myBox { 
+                    @include transform(rotate(20deg)); 
+                  }</pre>
+              </div>
+            </div>
+            <div class="contentText">
+              After compilation, the CSS will look like this:
+            </div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  CSS Output: 
+                  .myBox { 
+                    -webkit-transform: rotate(20deg);
+                    -ms-transform: rotate(20deg); 
+                    transform: rotate(20deg); 
+                  }</pre>
+              </div>
+            </div>
+          </div> 
+        </div><br><br><br>
+        <br /><br />
+      </div>
+      <br /><br /><br>
+    </main>
+  </body>
+</html>
