@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@extend</title>
+    <link rel="stylesheet" href="../../template/style.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/jpg" href="../../template/img/icons/iconSASS.png" />
+  </head>
+  <body>
+    <div class="vectors">
+      <img src="../../template/img/vectors/Vector 1.png" alt="" />
+      <img src="../../template/img/vectors/Vector 2.png" alt="" />
+      <img src="../../template/img/vectors/Vector 3.png" alt="" />
+      <img src="../../template/img/vectors/Vector 8.png" alt="" />
+      <!-- if the page is long you can add this code for design -->
+      <!-- <img src="../../template/img/Vector 14.png" alt="" /> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 8.png" alt=""> -->
+      <!-- <img src="../../template/img/Vector 14.png" alt=""> -->
+    </div>
+    <header>
+      <div class="title"><a href="../../index.html">FRONTEND</a></div>
+      <img src="../../template/img/vectors/Vector 16.png" alt="" />
+      <div class="topicTitle">SASS</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="topicSubTitle">@extend</div>
+        <img class="vector2" src="../../template/img/vectors/Vector 16.png" alt="" />
+        <div class="textArea">
+          <div class="textContent">
+            <div class="contentTitle">Sass @extend Directive</div>
+            <div class="contentText">
+              <p>
+                The <span class="item">@extend</span> directive lets you share a set of CSS properties from one selector to another. <br>
+
+The <span class="item">@extend</span> directive is useful if you have almost identically styled elements that only differ in some small details. <br>
+
+The following Sass example first creates a basic style for buttons (this style will be used for most buttons). Then, we create one style for a "Report" button and one style for a "Submit" button. Both "Report" and "Submit" button inherit all the CSS properties from the .button-basic class, through the <span class="item">@extend</span> directive. In addition, they have their own colors defined:
+              </p>
+            </div>
+            
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  SCSS Syntax:
+
+                  .button-basic  {
+                    border: none;
+                    padding: 15px 30px;
+                    text-align: center;
+                    font-size: 16px;
+                    cursor: pointer;
+                  } 
+                  .button-report  {
+                    @extend .button-basic;
+                    background-color: red;
+                  }
+                  .button-submit  {
+                    @extend .button-basic;
+                    background-color: green;
+                    color: white;
+                  }</pre>
+              </div>
+            </div>
+          </div>
+          <div class="textContent">
+            <div class="contentText">After compilation, the CSS will look like this:</div>
+            <div class="codeArea">
+              <div class="codeContent">
+                <pre>
+                  CSS Output:
+                  .button-basic, .button-report, .button-submit {
+                    border: none;
+                    padding: 15px 30px;
+                    text-align: center;
+                    font-size: 16px;
+                    cursor: pointer;
+                  }
+                  .button-report  {
+                    background-color: red;
+                  }
+                  .button-submit  {
+                    background-color: green;
+                    color: white;
+                  }</pre
+                >
+              </div>
+            </div>
+            <div class="contentText"><p>By using the <span class="item">@extend</span> directive, you do not need to specify several classes for an element in your HTML code, like this: &lt;button class="button-basic button-report"&gt; Report this &lt;button&gt; You just need to specify .button-report to get both sets of styles.
+
+                The <span class="item">@extend</span> directive helps keep your Sass code very DRY.</p></div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </main> <br><br><br>
+  </body>
+</html>
